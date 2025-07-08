@@ -1,41 +1,38 @@
-name: CI/CD
+name: Deploy
 
 on:
   push:
     branches: 'main'
 
 jobs:
-  build:
-    name: Build
+  build_site:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
           cache: npm
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build
+      - name: build
         env:
-          BASE_PATH: '/aeroparticipa'
+          BASE_PATH: '/${{ github.event.repository.name }}'
         run: |
           npm run build
-          touch build/.nojekyll
 
       - name: Upload Artifacts
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: 'build/'
 
   deploy:
-    name: Deploy
-    needs: build
+    needs: build_site
     runs-on: ubuntu-latest
 
     permissions:
@@ -49,4 +46,4 @@ jobs:
     steps:
       - name: Deploy
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
