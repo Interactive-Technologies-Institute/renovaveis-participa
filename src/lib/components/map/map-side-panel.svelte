@@ -134,7 +134,7 @@
 	<div class="bg-muted/20 border-t p-6">
 		<div class="text-center">
 			<p class="text-muted-foreground mb-3 text-sm">Tem questões sobre alguma área?</p>
-			<Button variant="outline" size="sm" href="{base}/participe">Participe no Diálogo</Button>
+			<Button variant="outline" size="sm" href="{base}/participe/">Participe no Diálogo</Button>
 		</div>
 	</div>
 </div>

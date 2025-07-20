@@ -25,8 +25,9 @@
 				Renováveis em Portugal
 			</h1>
 			<div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row lg:gap-6">
-				<Button size="lg" href="{base}/participe">Participe no Diálogo</Button>
-				<Button variant="outline" size="lg" href="{base}/areas-aceleracao">Explore as Áreas</Button>
+				<Button size="lg" href="{base}/participe/">Participe no Diálogo</Button>
+				<Button variant="outline" size="lg" href="{base}/areas-aceleracao/">Explore as Áreas</Button
+				>
 			</div>
 		</div>
 	</div>
@@ -80,8 +81,8 @@
 					Portugal. Participe no espaço de diálogo e contribua para o futuro energético do país.
 				</p>
 				<div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
-					<Button size="lg" href="{base}/participe">Participar no Diálogo</Button>
-					<Button variant="outline" size="lg" href="{base}/faq">Ver FAQ</Button>
+					<Button size="lg" href="{base}/participe/">Participar no Diálogo</Button>
+					<Button variant="outline" size="lg" href="{base}/faq/">Ver FAQ</Button>
 				</div>
 			</div>
 		</div>

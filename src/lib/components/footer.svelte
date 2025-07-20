@@ -25,18 +25,18 @@
 				<h3 class="font-semibold">Estratégia de Participação</h3>
 				<ul class="text-muted-foreground mt-4 space-y-2 text-sm">
 					<li>
-						<a href="{base}/participacao-publica" class="hover:text-foreground"
+						<a href="{base}/participacao-publica/" class="hover:text-foreground"
 							>Participação Pública</a
 						>
 					</li>
 					<li>
-						<a href="{base}/processo-participacao" class="hover:text-foreground">
+						<a href="{base}/processo-participacao/" class="hover:text-foreground">
 							Processo de Participação
 						</a>
 					</li>
-					<li><a href="{base}/focus-groups" class="hover:text-foreground">Focus Groups</a></li>
+					<li><a href="{base}/focus-groups/" class="hover:text-foreground">Focus Groups</a></li>
 					<li>
-						<a href="{base}/entidades-envolvidas" class="hover:text-foreground"
+						<a href="{base}/entidades-envolvidas/" class="hover:text-foreground"
 							>Entidades Envolvidas</a
 						>
 					</li>
@@ -45,17 +45,17 @@
 			<div>
 				<h3 class="text-foreground font-semibold">O que é …</h3>
 				<ul class="text-muted-foreground mt-4 space-y-2 text-sm">
-					<li><a href="{base}/aae" class="hover:text-foreground">AAE</a></li>
+					<li><a href="{base}/aae/" class="hover:text-foreground">AAE</a></li>
 					<li>
-						<a href="{base}/areas-aceleracao" class="hover:text-foreground">Áreas de Aceleração</a>
+						<a href="{base}/areas-aceleracao/" class="hover:text-foreground">Áreas de Aceleração</a>
 					</li>
 					<li>
-						<a href="{base}/diretrizes-europeias" class="hover:text-foreground"
+						<a href="{base}/diretrizes-europeias/" class="hover:text-foreground"
 							>Diretrizes Europeias</a
 						>
 					</li>
 					<li>
-						<a href="{base}/legislacao-nacional" class="hover:text-foreground"
+						<a href="{base}/legislacao-nacional/" class="hover:text-foreground"
 							>Legislação Nacional</a
 						>
 					</li>
@@ -64,9 +64,9 @@
 			<div>
 				<h3 class="text-foreground font-semibold">Recursos</h3>
 				<ul class="text-muted-foreground mt-4 space-y-2 text-sm">
-					<li><a href="{base}/relatorios" class="hover:text-foreground">Relatórios</a></li>
-					<li><a href="{base}/faq" class="hover:text-foreground">FAQ</a></li>
-					<li><a href="{base}/composicao" class="hover:text-foreground">Sobre a Equipa</a></li>
+					<li><a href="{base}/relatorios/" class="hover:text-foreground">Relatórios</a></li>
+					<li><a href="{base}/faq/" class="hover:text-foreground">FAQ</a></li>
+					<li><a href="{base}/composicao/" class="hover:text-foreground">Sobre a Equipa</a></li>
 				</ul>
 			</div>
 		</div>

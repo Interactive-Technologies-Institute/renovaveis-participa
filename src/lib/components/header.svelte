@@ -18,6 +18,6 @@
 		</div>
 		<MainNav class="hidden lg:flex" />
 		<MobileNav class="flex lg:hidden" />
-		<Button href="{base}/participe">PARTICIPE!</Button>
+		<Button href="{base}/participe/">PARTICIPE!</Button>
 	</div>
 </header>

@@ -60,39 +60,39 @@
 		preventScroll
 	>
 		<div class="flex flex-col gap-8 overflow-auto px-6 py-6">
-			{@render NavItem({ href: '/', content: 'FAQ' })}
-			{@render NavItem({ href: '/', content: 'Relatórios' })}
+			{@render NavItem({ href: '/faq/', content: 'FAQ' })}
+			{@render NavItem({ href: '/relatorios/', content: 'Relatórios' })}
 			<div class="flex flex-col gap-4">
 				<div class="text-muted-foreground text-sm font-medium">Estratégia de Participação</div>
 				<div class="flex flex-col gap-3">
-					{@render NavItem({ href: '/participacao-publica', content: 'Participação Pública' })}
+					{@render NavItem({ href: '/participacao-publica/', content: 'Participação Pública' })}
 					{@render NavItem({
-						href: '/processo-participacao',
+						href: '/processo-participacao/',
 						content: 'Processo de Participação'
 					})}
 					{@render NavItem({ href: '/focus-groups', content: 'Focus Groups' })}
-					{@render NavItem({ href: '/entidades-envolvidas', content: 'Entidades Envolvidas' })}
+					{@render NavItem({ href: '/entidades-envolvidas/', content: 'Entidades Envolvidas' })}
 				</div>
 			</div>
 			<div class="flex flex-col gap-4">
 				<div class="text-muted-foreground text-sm font-medium">Estratégia de Participação</div>
 				<div class="flex flex-col gap-3">
-					{@render NavItem({ href: '/participacao-publica', content: 'Participação Pública' })}
+					{@render NavItem({ href: '/participacao-publica/', content: 'Participação Pública' })}
 					{@render NavItem({
-						href: '/processo-participacao',
+						href: '/processo-participacao/',
 						content: 'Processo de Participação'
 					})}
 					{@render NavItem({ href: '/focus-groups', content: 'Focus Groups' })}
-					{@render NavItem({ href: '/entidades-envolvidas', content: 'Entidades Envolvidas' })}
+					{@render NavItem({ href: '/entidades-envolvidas/', content: 'Entidades Envolvidas' })}
 				</div>
 			</div>
 			<div class="flex flex-col gap-4">
 				<div class="text-muted-foreground text-sm font-medium">O que é …</div>
 				<div class="flex flex-col gap-3">
-					{@render NavItem({ href: '/aae', content: 'AAE' })}
-					{@render NavItem({ href: '/areas-aceleracao', content: 'Áreas de Aceleração' })}
-					{@render NavItem({ href: '/diretrizes-europeias', content: 'Diretrizes Europeias' })}
-					{@render NavItem({ href: '/legislacao-nacional', content: 'Legislação Nacional' })}
+					{@render NavItem({ href: '/aae/', content: 'AAE' })}
+					{@render NavItem({ href: '/areas-aceleracao/', content: 'Áreas de Aceleração' })}
+					{@render NavItem({ href: '/diretrizes-europeias/', content: 'Diretrizes Europeias' })}
+					{@render NavItem({ href: '/legislacao-nacional/', content: 'Legislação Nacional' })}
 				</div>
 			</div>
 		</div>
