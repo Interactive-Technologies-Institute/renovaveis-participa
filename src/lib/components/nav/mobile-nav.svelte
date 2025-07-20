@@ -66,7 +66,7 @@
 				<div class="flex flex-col gap-3">
 					{@render NavItem({ href: '/participacao-publica', content: 'Participação Pública' })}
 					{@render NavItem({
-						href: '/processo-de-participacao',
+						href: '/processo-participacao',
 						content: 'Processo de Participação'
 					})}
 					{@render NavItem({ href: '/focus-groups', content: 'Focus Groups' })}
@@ -78,7 +78,7 @@
 				<div class="flex flex-col gap-3">
 					{@render NavItem({ href: '/participacao-publica', content: 'Participação Pública' })}
 					{@render NavItem({
-						href: '/processo-de-participacao',
+						href: '/processo-participacao',
 						content: 'Processo de Participação'
 					})}
 					{@render NavItem({ href: '/focus-groups', content: 'Focus Groups' })}

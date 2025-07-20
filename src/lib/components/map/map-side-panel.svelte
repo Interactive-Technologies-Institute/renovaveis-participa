@@ -85,7 +85,7 @@
 			</div>
 		{:else}
 			<div class="space-y-4 p-6">
-				{#each areas as area}
+				{#each areas as area (area.id)}
 					<div
 						class="hover:bg-muted/50 cursor-pointer rounded-lg border p-4 transition-colors"
 						onclick={() => (selectedArea = area)}

@@ -1,14 +1,14 @@
 <script lang="ts">
 	import type { SvelteHTMLElements } from 'svelte/elements';
 
-	let { children, class: className, ...rest }: SvelteHTMLElements['svg'] = $props();
+	let { class: className, ...restProps }: SvelteHTMLElements['svg'] = $props();
 </script>
 
 <svg
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 -960 960 960"
 	class={className}
-	{...rest}
+	{...restProps}
 	fill="currentColor"
 >
 	<path

@@ -68,7 +68,7 @@
 <div class="h-full w-full overflow-hidden" use:initialize>
 	{#if map}
 		{@render children?.()}
-		{#each renewableAreas as area}
+		{#each renewableAreas as area (area.id)}
 			<Marker lng={area.coordinates[0]} lat={area.coordinates[1]}>
 				<div
 					class="renewable-marker"
