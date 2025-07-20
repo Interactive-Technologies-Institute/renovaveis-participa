@@ -1,47 +1,71 @@
-<script>
-	import { base } from '$app/paths';
-	import ArrowLink from './ArrowLink.svelte';
+<script lang="ts">
+	import { Button } from '@/components/ui/button';
+	import Graph from './icons/graph.svelte';
+	import { Separator } from './ui/separator';
 </script>
 
-<footer>
-	<div class="bg-blue-dark">
-		<div class="container py-12 flex flex-col items-stretch justify-between space-y-10">
-			<div
-				class="flex flex-col space-y-10 md:flex-row items-center md:justify-between md:space-x-10"
-			>
-				<img
-					src="{base}/svgs/logo_alt.svg"
-					alt="AeroParticipa"
-					height="126.67"
-					width="384.04"
-					class="h-24 w-auto"
-				/>
-				<img
-					src="{base}/svgs/cti_logo.svg"
-					alt="CTI"
-					height="61.15"
-					width="228.06"
-					class="h-14 w-auto"
-				/>
-			</div>
-			<div
-				class="flex flex-col space-y-4 items-center md:flex-row md:items-end md:justify-between md:space-x-10"
-			>
-				<p class="basis-2/4 text-lg text-white text-center md:text-left md:max-w-lg">
-					Promove a análise estratégica, multidisciplinar e participativa do aumento da capacidade
-					aeroportuária da região de Lisboa.
-				</p>
-				<div class="basis-2/4 flex flex-row space-x-2 items-center">
-					<p class="text-lg text-white md:ml-auto">Dúvidas ou sugestões?</p>
-					<ArrowLink label="Contacte-nos" href="mailto:cti.aeroporto@lnec.pt" isSmall isLight />
+<footer class="bg-muted/50 border-t py-12">
+	<div class="container">
+		<div class="grid gap-8 lg:grid-cols-4">
+			<div class="flex flex-col items-start">
+				<div class="items-left flex gap-2">
+					<div class="bg-primary flex h-8 w-8 items-center justify-center rounded-md">
+						<Graph height={20} width={20} class="text-primary-foreground" />
+					</div>
+					<span class="font-title text-lg font-bold">RenováveisParticipa</span>
 				</div>
+				<p class="text-muted-foreground mt-4 mb-8 text-sm">
+					Espaço de diálogo sobre as Opções Estratégicas para as Áreas de Aceleração de Energias
+					Renováveis em Portugal
+				</p>
+				<img src="/ist-logo.svg" alt="IST Logo" class="h-20 w-auto" />
+			</div>
+			<div>
+				<h3 class="font-semibold">Estratégia de Participação</h3>
+				<ul class="text-muted-foreground mt-4 space-y-2 text-sm">
+					<li>
+						<a href="/participacao-publica" class="hover:text-foreground">Participação Pública</a>
+					</li>
+					<li>
+						<a href="/processo-participacao" class="hover:text-foreground">
+							Processo de Participação
+						</a>
+					</li>
+					<li><a href="/focus-groups" class="hover:text-foreground">Focus Groups</a></li>
+					<li>
+						<a href="/entidades-envolvidas" class="hover:text-foreground">Entidades Envolvidas</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h3 class="text-foreground font-semibold">O que é …</h3>
+				<ul class="text-muted-foreground mt-4 space-y-2 text-sm">
+					<li><a href="/aae" class="hover:text-foreground">AAE</a></li>
+					<li><a href="/areas-aceleracao" class="hover:text-foreground">Áreas de Aceleração</a></li>
+					<li>
+						<a href="/diretrizes-europeias" class="hover:text-foreground">Diretrizes Europeias</a>
+					</li>
+					<li>
+						<a href="/legislacao-nacional" class="hover:text-foreground">Legislação Nacional</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h3 class="text-foreground font-semibold">Recursos</h3>
+				<ul class="text-muted-foreground mt-4 space-y-2 text-sm">
+					<li><a href="/relatorios" class="hover:text-foreground">Relatórios</a></li>
+					<li><a href="/faq" class="hover:text-foreground">FAQ</a></li>
+					<li><a href="/composicao" class="hover:text-foreground">Sobre a Equipa</a></li>
+				</ul>
 			</div>
 		</div>
-		<div class="bg-blue-darker">
-			<div class="container py-3">
-				<p class="text-sm text-white/70 text-center">
-					AeroParticipa © 2023. Todos os direitos reservados.
-				</p>
+		<Separator class="my-8" />
+		<div
+			class="text-muted-foreground flex flex-col gap-4 text-center text-sm md:flex-row md:justify-between"
+		>
+			<p>&copy; {new Date().getFullYear()} Renováveis Participa. Todos os direitos reservados.</p>
+			<div class="flex justify-center md:justify-end">
+				<Button variant="ghost" size="sm">Voltar ao topo ↑</Button>
 			</div>
 		</div>
 	</div>

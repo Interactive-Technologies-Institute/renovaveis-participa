@@ -1,27 +1,16 @@
 <script lang="ts">
-	import { browser } from '$app/environment';
-	import { base } from '$app/paths';
-	import { page } from '$app/stores';
-	import Footer from '@/components/Footer.svelte';
-	import Header from '@/components/Header.svelte';
-	import Popup from '@/components/Popup.svelte';
-	import * as Fathom from 'fathom-client';
-	import { onMount } from 'svelte';
+	import Footer from '@/components/footer.svelte';
+	import Header from '@/components/header.svelte';
+	import { ScrollArea } from '@/components/ui/scroll-area';
 	import '../app.css';
 
-	onMount(() => {
-		Fathom.load('CGQSLBEF', { includedDomains: ['aeroparticipa.pt', 'www.aeroparticipa.pt'] });
-	});
-
-	$: $page.url.pathname, browser && Fathom.trackPageview();
+	let { children } = $props();
 </script>
 
-<div class="min-h-screen flex flex-col">
-	<a href="#main" class="sr-only">Saltar para o conteúdo principal da página</a>
+<ScrollArea class="h-screen w-full">
 	<Header />
-	<main id="main" class="grow bg-background"><slot /></main>
+	<main class="min-h-[calc(100vh-4rem)]">
+		{@render children()}
+	</main>
 	<Footer />
-</div>
-{#if $page.url.pathname != base + '/'}
-	<Popup />
-{/if}
+</ScrollArea>
