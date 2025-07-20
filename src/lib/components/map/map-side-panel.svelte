@@ -1,11 +1,11 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import {
 		getAreaStatusColor,
 		getAreaTypeColor,
 		renewableAreas,
 		type RenewableArea
 	} from '$lib/data';
-	import { base } from '$service-worker';
 	import { Button } from '@/components/ui/button';
 	import { Separator } from '@/components/ui/separator';
 
