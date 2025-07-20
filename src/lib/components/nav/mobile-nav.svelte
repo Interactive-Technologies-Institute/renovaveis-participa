@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { buttonVariants } from '@/components/ui/button';
 	import * as Popover from '@/components/ui/popover';
 	import { cn } from '@/utils';
@@ -19,7 +20,7 @@
 
 {#snippet NavItem({ href, content, class: className, ...props }: NavItemProps)}
 	<a
-		{href}
+		href={`${base}${href}`}
 		onclick={() => {
 			open = false;
 		}}

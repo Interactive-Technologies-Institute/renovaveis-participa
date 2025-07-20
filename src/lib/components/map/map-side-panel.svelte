@@ -5,6 +5,7 @@
 		renewableAreas,
 		type RenewableArea
 	} from '$lib/data';
+	import { base } from '$service-worker';
 	import { Button } from '@/components/ui/button';
 	import { Separator } from '@/components/ui/separator';
 
@@ -133,7 +134,7 @@
 	<div class="bg-muted/20 border-t p-6">
 		<div class="text-center">
 			<p class="text-muted-foreground mb-3 text-sm">Tem questões sobre alguma área?</p>
-			<Button variant="outline" size="sm" href="/participe">Participe no Diálogo</Button>
+			<Button variant="outline" size="sm" href="{base}/participe">Participe no Diálogo</Button>
 		</div>
 	</div>
 </div>

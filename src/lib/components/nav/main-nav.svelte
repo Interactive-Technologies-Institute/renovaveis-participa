@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import * as NavigationMenu from '@/components/ui/navigation-menu';
 	import { navigationMenuTriggerStyle } from '@/components/ui/navigation-menu/navigation-menu-trigger.svelte';
 	import type { HTMLAttributes } from 'svelte/elements';
@@ -15,14 +16,14 @@
 		<NavigationMenu.Item>
 			<NavigationMenu.Link>
 				{#snippet child()}
-					<a href="/faq" class={navigationMenuTriggerStyle()}>FAQ</a>
+					<a href="{base}/faq" class={navigationMenuTriggerStyle()}>FAQ</a>
 				{/snippet}
 			</NavigationMenu.Link>
 		</NavigationMenu.Item>
 		<NavigationMenu.Item>
 			<NavigationMenu.Link>
 				{#snippet child()}
-					<a href="/relatorios" class={navigationMenuTriggerStyle()}>Relatórios</a>
+					<a href="{base}/relatorios" class={navigationMenuTriggerStyle()}>Relatórios</a>
 				{/snippet}
 			</NavigationMenu.Link>
 		</NavigationMenu.Item>
@@ -31,14 +32,14 @@
 			<NavigationMenu.Content>
 				<ul class="grid w-[200px] gap-4 p-2">
 					<li>
-						<NavigationMenu.Link href="/participacao-publica">
+						<NavigationMenu.Link href="{base}/participacao-publica">
 							Participação Pública
 						</NavigationMenu.Link>
-						<NavigationMenu.Link href="/processo-participacao">
+						<NavigationMenu.Link href="{base}/processo-participacao">
 							Processo de Participação
 						</NavigationMenu.Link>
-						<NavigationMenu.Link href="/focus-groups">Focus Groups</NavigationMenu.Link>
-						<NavigationMenu.Link href="/entidades-envolvidas">
+						<NavigationMenu.Link href="{base}/focus-groups">Focus Groups</NavigationMenu.Link>
+						<NavigationMenu.Link href="{base}/entidades-envolvidas">
 							Entidades Envolvidas
 						</NavigationMenu.Link>
 					</li>
@@ -50,12 +51,14 @@
 			<NavigationMenu.Content>
 				<ul class="grid w-[200px] gap-4 p-2">
 					<li>
-						<NavigationMenu.Link href="/aae">AAE</NavigationMenu.Link>
-						<NavigationMenu.Link href="/areas-aceleracao">Áreas de Aceleração</NavigationMenu.Link>
-						<NavigationMenu.Link href="/diretrizes-europeias">
+						<NavigationMenu.Link href="{base}/aae">AAE</NavigationMenu.Link>
+						<NavigationMenu.Link href="{base}/areas-aceleracao"
+							>Áreas de Aceleração</NavigationMenu.Link
+						>
+						<NavigationMenu.Link href="{base}/diretrizes-europeias">
 							Diretrizes Europeias
 						</NavigationMenu.Link>
-						<NavigationMenu.Link href="/legislacao-nacional">
+						<NavigationMenu.Link href="{base}/legislacao-nacional">
 							Legislação Nacional
 						</NavigationMenu.Link>
 					</li>
@@ -67,7 +70,7 @@
 			<NavigationMenu.Content>
 				<ul class="grid w-[200px] gap-4 p-2">
 					<li>
-						<NavigationMenu.Link href="/composicao">Composição</NavigationMenu.Link>
+						<NavigationMenu.Link href="{base}/composicao">Composição</NavigationMenu.Link>
 					</li>
 				</ul>
 			</NavigationMenu.Content>
