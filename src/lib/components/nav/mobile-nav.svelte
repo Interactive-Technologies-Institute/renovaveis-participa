@@ -70,7 +70,7 @@
 						href: '/processo-participacao/',
 						content: 'Processo de Participação'
 					})}
-					{@render NavItem({ href: '/focus-groups', content: 'Focus Groups' })}
+					{@render NavItem({ href: '/focus-groups/', content: 'Focus Groups' })}
 					{@render NavItem({ href: '/entidades-envolvidas/', content: 'Entidades Envolvidas' })}
 				</div>
 			</div>
@@ -82,7 +82,7 @@
 						href: '/processo-participacao/',
 						content: 'Processo de Participação'
 					})}
-					{@render NavItem({ href: '/focus-groups', content: 'Focus Groups' })}
+					{@render NavItem({ href: '/focus-groups/', content: 'Focus Groups' })}
 					{@render NavItem({ href: '/entidades-envolvidas/', content: 'Entidades Envolvidas' })}
 				</div>
 			</div>
