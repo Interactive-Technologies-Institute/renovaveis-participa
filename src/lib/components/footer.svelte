@@ -1,25 +1,18 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import { Button } from '@/components/ui/button';
-	import Graph from './icons/graph.svelte';
 	import { Separator } from './ui/separator';
 </script>
 
 <footer class="bg-muted/50 border-t py-12">
 	<div class="container">
 		<div class="grid gap-8 lg:grid-cols-4">
-			<div class="flex flex-col items-start">
-				<div class="items-left flex gap-2">
-					<div class="bg-primary flex h-8 w-8 items-center justify-center rounded-md">
-						<Graph height={20} width={20} class="text-primary-foreground" />
-					</div>
-					<span class="font-title text-lg font-bold">RenováveisParticipa</span>
-				</div>
-				<p class="text-muted-foreground mt-4 mb-8 text-sm">
+			<div class="flex flex-col items-start gap-4">
+				<img src="{base}/ist-logo.svg" alt="IST Logo" class="h-16 w-auto" />
+				<p class="text-muted-foreground max-w-[18rem] text-sm">
 					Espaço de diálogo sobre as Opções Estratégicas para as Áreas de Aceleração de Energias
 					Renováveis em Portugal
 				</p>
-				<img src="{base}/ist-logo.svg" alt="IST Logo" class="h-20 w-auto" />
 			</div>
 			<div>
 				<h3 class="font-semibold">Estratégia de Participação</h3>
