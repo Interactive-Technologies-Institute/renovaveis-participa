@@ -70,7 +70,10 @@
 			<NavigationMenu.Content>
 				<ul class="grid w-[200px] gap-4 p-2">
 					<li>
-						<NavigationMenu.Link href="{base}/composicao/">Composição</NavigationMenu.Link>
+						<NavigationMenu.Link href="{base}/coordenacao/">Coordenação</NavigationMenu.Link>
+						<NavigationMenu.Link href="{base}/equipa-das-areas-tematicas/">
+							Equipa das Áreas Temáticas
+						</NavigationMenu.Link>
 					</li>
 				</ul>
 			</NavigationMenu.Content>

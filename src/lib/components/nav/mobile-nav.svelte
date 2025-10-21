@@ -86,7 +86,11 @@
 			<div class="flex flex-col gap-2">
 				<div class="text-muted-foreground text-sm font-medium">Sobre a Equipa</div>
 				<div class="flex flex-col gap-2">
-					{@render NavItem({ href: '/composicao/', content: 'Composição' })}
+					{@render NavItem({ href: '/coordenacao/', content: 'Coordenação' })}
+					{@render NavItem({
+						href: '/equipa-das-areas-tematicas/',
+						content: 'Equipa das Áreas Temáticas'
+					})}
 				</div>
 			</div>
 		</div>
