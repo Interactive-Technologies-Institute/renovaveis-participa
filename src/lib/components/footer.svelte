@@ -59,7 +59,12 @@
 				<ul class="text-muted-foreground mt-4 space-y-2 text-sm">
 					<li><a href="{base}/relatorios/" class="hover:text-foreground">Relatórios</a></li>
 					<li><a href="{base}/faq/" class="hover:text-foreground">FAQ</a></li>
-					<li><a href="{base}/composicao/" class="hover:text-foreground">Sobre a Equipa</a></li>
+					<li><a href="{base}/coordenacao/" class="hover:text-foreground">Coordenação</a></li>
+					<li>
+						<a href="{base}/equipa-das-areas-tematicas/" class="hover:text-foreground"
+							>Equipa das Áreas Temáticas</a
+						>
+					</li>
 				</ul>
 			</div>
 		</div>
