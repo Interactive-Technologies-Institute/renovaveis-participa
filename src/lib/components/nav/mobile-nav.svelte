@@ -82,7 +82,7 @@
 				<div class="text-muted-foreground text-sm font-medium">O que é …</div>
 				<div class="flex flex-col gap-2">
 					{@render NavItem({
-						href: '/avaliacao-ambiental-estrate/',
+						href: '/avaliacao-ambiental-estrategica/',
 						content: 'Avaliação Ambiental Estratégica'
 					})}
 					{@render NavItem({ href: '/zonas-aceleracao/', content: 'Zonas de Aceleração' })}

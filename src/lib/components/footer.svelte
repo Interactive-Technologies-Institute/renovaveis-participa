@@ -52,7 +52,7 @@
 				<h3 class="text-foreground font-semibold">O que é …</h3>
 				<ul class="text-muted-foreground mt-4 space-y-2 text-sm">
 					<li>
-						<a href="{base}/avaliacao-ambiental-estrate/" class="hover:text-foreground"
+						<a href="{base}/avaliacao-ambiental-estrategica/" class="hover:text-foreground"
 							>Avaliação Ambiental Estratégica</a
 						>
 					</li>

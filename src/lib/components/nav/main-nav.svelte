@@ -56,7 +56,7 @@
 			<NavigationMenu.Content>
 				<ul class="grid w-[200px] gap-4 p-2">
 					<li>
-						<NavigationMenu.Link href="{base}/avaliacao-ambiental-estrate/"
+						<NavigationMenu.Link href="{base}/avaliacao-ambiental-estrategica/"
 							>Avaliação Ambiental Estratégica</NavigationMenu.Link
 						>
 						<NavigationMenu.Link href="{base}/zonas-aceleracao/"
