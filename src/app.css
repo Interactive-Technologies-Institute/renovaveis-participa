@@ -40,9 +40,12 @@
 	--ring: oklch(0.7 0.05 232.4);
 
 	/* Chart Colors (sampled to match brand aesthetic) */
-	--chart-1: oklch(0.694 0.231 232.4); /* primary blue */
-	--chart-2: oklch(0.5 0.1 256.5); /* dark blue-gray */
-	--chart-3: oklch(0.35 0.05 250); /* muted tone */
+	--chart-1: oklch(0.694 0.231 232.4);
+	/* primary blue */
+	--chart-2: oklch(0.5 0.1 256.5);
+	/* dark blue-gray */
+	--chart-3: oklch(0.35 0.05 250);
+	/* muted tone */
 	--chart-4: oklch(0.828 0.189 84.429);
 	--chart-5: oklch(0.769 0.188 70.08);
 
@@ -93,9 +96,12 @@
 	--ring: oklch(0.7 0.05 232.4);
 
 	/* Chart Colors (sampled to match brand aesthetic) */
-	--chart-1: oklch(0.694 0.231 232.4); /* primary blue */
-	--chart-2: oklch(0.5 0.1 256.5); /* dark blue-gray */
-	--chart-3: oklch(0.35 0.05 250); /* muted tone */
+	--chart-1: oklch(0.694 0.231 232.4);
+	/* primary blue */
+	--chart-2: oklch(0.5 0.1 256.5);
+	/* dark blue-gray */
+	--chart-3: oklch(0.35 0.05 250);
+	/* muted tone */
 	--chart-4: oklch(0.828 0.189 84.429);
 	--chart-5: oklch(0.769 0.188 70.08);
 
@@ -152,6 +158,7 @@
 	* {
 		@apply border-border outline-ring/50;
 	}
+
 	body {
 		@apply bg-background text-foreground;
 	}
@@ -201,7 +208,7 @@
 			line-height: var(--text-3xl--line-height);
 			font-weight: 600;
 			letter-spacing: var(--tracking-tight);
-			margin-top: calc(var(--spacing) * 12);
+			margin-top: calc(var(--spacing) * 8);
 
 			&:first-child {
 				margin-top: 0;
@@ -214,7 +221,7 @@
 			line-height: var(--text-2xl--line-height);
 			font-weight: 600;
 			letter-spacing: var(--tracking-tight);
-			margin-top: calc(var(--spacing) * 12);
+			margin-top: calc(var(--spacing) * 6);
 
 			&:first-child {
 				margin-top: 0;
@@ -227,7 +234,7 @@
 			line-height: var(--text-xl--line-height);
 			font-weight: 600;
 			letter-spacing: var(--tracking-tight);
-			margin-top: calc(var(--spacing) * 12);
+			margin-top: calc(var(--spacing) * 6);
 
 			&:first-child {
 				margin-top: 0;
@@ -240,7 +247,7 @@
 			line-height: var(--text-lg--line-height);
 			font-weight: 600;
 			letter-spacing: var(--tracking-tight);
-			margin-top: calc(var(--spacing) * 12);
+			margin-top: calc(var(--spacing) * 6);
 
 			&:first-child {
 				margin-top: 0;
@@ -253,7 +260,7 @@
 			line-height: var(--text-base--line-height);
 			font-weight: 600;
 			letter-spacing: var(--tracking-tight);
-			margin-top: calc(var(--spacing) * 12);
+			margin-top: calc(var(--spacing) * 6);
 
 			&:first-child {
 				margin-top: 0;
@@ -266,7 +273,7 @@
 		& h4:not(.not-typography h4),
 		& h5:not(.not-typography h5),
 		& h6:not(.not-typography h6) {
-			& + p {
+			&+p {
 				margin-top: 0;
 			}
 		}
@@ -358,14 +365,13 @@
 			margin-left: calc(var(--spacing) * 6);
 			list-style: disc;
 
-			& > li {
+			&>li {
 				margin-top: calc(var(--spacing) * 2);
 			}
 
-			& p {
+			& p:not(.not-typography p) {
 				margin-top: 0;
 				margin-bottom: 0;
-				display: inline;
 			}
 		}
 
@@ -374,15 +380,24 @@
 			margin-left: calc(var(--spacing) * 6);
 			list-style: decimal;
 
-			& > li {
+			&>li {
 				margin-top: calc(var(--spacing) * 2);
 			}
 
-			& p {
+			& p:not(.not-typography p) {
 				margin-top: 0;
 				margin-bottom: 0;
-				display: inline;
 			}
+		}
+
+		& li:not(.not-typography li)>ul,
+		& li:not(.not-typography li)>ol {
+			margin-top: calc(var(--spacing) * 2);
+		}
+
+		& li:not(.not-typography li)>ul:first-child,
+		& li:not(.not-typography li)>ol:first-child {
+			margin-top: 0;
 		}
 
 		& pre:not(.not-typography pre) {
@@ -439,7 +454,7 @@
 			margin-bottom: calc(var(--spacing) * 6);
 		}
 
-		& picture > img:not(.not-typography picture > img) {
+		& picture>img:not(.not-typography picture > img) {
 			margin-top: 0;
 			margin-bottom: 0;
 		}
@@ -544,16 +559,12 @@
 
 .dotted-grid-bg {
 	background-image:
-		linear-gradient(
-			to right,
+		linear-gradient(to right,
 			color-mix(in srgb, var(--color-primary) 15%, transparent) 1px,
-			transparent 1px
-		),
-		linear-gradient(
-			to bottom,
+			transparent 1px),
+		linear-gradient(to bottom,
 			color-mix(in srgb, var(--color-primary) 15%, transparent) 1px,
-			transparent 1px
-		);
+			transparent 1px);
 	background-size: 20px 20px;
 	background-position:
 		0 0,

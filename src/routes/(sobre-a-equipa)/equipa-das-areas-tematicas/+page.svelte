@@ -3,8 +3,8 @@
 </script>
 
 <PageHeader
-	title="Composição da Equipa"
-	description="Informações sobre a composição da equipa responsável pelo projeto de energias renováveis."
+	title="Equipa das Áreas Temáticas"
+	description="Conheça a equipa de cada Área Temática a desenvolver a proposta de Plano Setorial das Zonas de Aceleração de Energias Renováveis (PSZAER) e respetiva Avaliação Ambiental Estratégica (AAE)."
 />
 <div class="container my-12 md:my-24">
 	<div class="typography">
@@ -46,7 +46,8 @@
 		<h2>Jurídico</h2>
 		<p>
 			Isabel Moraes Cardoso, AMMC Legal, Coord<br />
-			Ana Pires da Silva, AMMC Legal
+			Ana Pires da Silva, AMMC Legal<br />
+			Ricardo Travado Reis, AMMC Legal
 		</p>
 
 		<h2>Integração da Informação Espacializada</h2>
@@ -65,5 +66,8 @@
 			Travis Kriplean<br />
 			João Nogueira
 		</p>
+
+		<h2>Apoio à Coordenação-Geral</h2>
+		<p>Joana Dias, CiTUA, IST</p>
 	</div>
 </div>

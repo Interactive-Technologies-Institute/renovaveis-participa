@@ -8,11 +8,19 @@
 	<div class="container">
 		<div class="grid gap-8 lg:grid-cols-4">
 			<div class="flex flex-col items-start gap-4">
-				<img src="{base}/ist-logo.svg" alt="IST Logo" class="h-16 w-auto" />
+				<img src="{base}/ist-logo.svg" alt="IST Logo" class="h-12 w-auto" />
 				<p class="text-muted-foreground max-w-[18rem] text-sm">
-					Espaço de diálogo sobre as Opções Estratégicas para as Áreas de Aceleração de Energias
+					Espaço de diálogo sobre as Opções Estratégicas para as Zonas de Aceleração de Energias
 					Renováveis em Portugal
 				</p>
+				<div class="text-muted-foreground">
+					<p class="text-sm">
+						Dúvidas ou sugestões? <a
+							href="mailto:joanafmdias@tecnico.ulisboa.pt"
+							class="text-primary hover:text-foreground">Contacte-nos</a
+						>
+					</p>
+				</div>
 			</div>
 			<div>
 				<h3 class="font-semibold">Estratégia de Participação</h3>
@@ -23,11 +31,16 @@
 						>
 					</li>
 					<li>
-						<a href="{base}/processo-participacao/" class="hover:text-foreground">
-							Processo de Participação
-						</a>
+						<a href="{base}/metodologia-participacao-publica/" class="hover:text-foreground"
+							>Metodologia de Participação Pública</a
+						>
 					</li>
-					<li><a href="{base}/focus-groups/" class="hover:text-foreground">Focus Groups</a></li>
+					<li>
+						<a href="{base}/processo-participacao/" class="hover:text-foreground"
+							>Processo de Participação</a
+						>
+					</li>
+					<li><a href="{base}/grupos-focais/" class="hover:text-foreground">Grupos Focais</a></li>
 					<li>
 						<a href="{base}/entidades-envolvidas/" class="hover:text-foreground"
 							>Entidades Envolvidas</a
@@ -38,9 +51,13 @@
 			<div>
 				<h3 class="text-foreground font-semibold">O que é …</h3>
 				<ul class="text-muted-foreground mt-4 space-y-2 text-sm">
-					<li><a href="{base}/aae/" class="hover:text-foreground">AAE</a></li>
 					<li>
-						<a href="{base}/areas-aceleracao/" class="hover:text-foreground">Áreas de Aceleração</a>
+						<a href="{base}/avaliacao-ambiental-estrate/" class="hover:text-foreground"
+							>Avaliação Ambiental Estratégica</a
+						>
+					</li>
+					<li>
+						<a href="{base}/zonas-aceleracao/" class="hover:text-foreground">Zonas de Aceleração</a>
 					</li>
 					<li>
 						<a href="{base}/diretrizes-europeias/" class="hover:text-foreground"
@@ -58,7 +75,11 @@
 				<h3 class="text-foreground font-semibold">Recursos</h3>
 				<ul class="text-muted-foreground mt-4 space-y-2 text-sm">
 					<li><a href="{base}/relatorios/" class="hover:text-foreground">Relatórios</a></li>
-					<li><a href="{base}/faq/" class="hover:text-foreground">FAQ</a></li>
+					<li>
+						<a href="{base}/perguntas-frequentes/" class="hover:text-foreground"
+							>Perguntas Frequentes</a
+						>
+					</li>
 					<li><a href="{base}/coordenacao/" class="hover:text-foreground">Coordenação</a></li>
 					<li>
 						<a href="{base}/equipa-das-areas-tematicas/" class="hover:text-foreground"

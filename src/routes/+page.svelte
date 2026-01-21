@@ -6,12 +6,23 @@
 	import { Button } from '@/components/ui/button';
 
 	let selectedArea: RenewableArea | null = $state(null);
+	let flippedCards = $state<Set<string>>(new Set());
 
 	function handleAreaSelect(areaId: string) {
 		const area = renewableAreas.find((a) => a.id === areaId);
 		if (area) {
 			selectedArea = area;
 		}
+	}
+
+	function toggleCard(cardId: string) {
+		const newFlipped = new Set(flippedCards);
+		if (newFlipped.has(cardId)) {
+			newFlipped.delete(cardId);
+		} else {
+			newFlipped.add(cardId);
+		}
+		flippedCards = newFlipped;
 	}
 </script>
 
@@ -21,14 +32,19 @@
 	<div class="relative z-10 container">
 		<div class="mx-auto max-w-4xl text-center">
 			<h1 class="font-title text-4xl font-bold sm:text-5xl md:text-6xl">
-				Espaço de diálogo sobre as Opções Estratégicas para as Áreas de Aceleração de Energias
-				Renováveis em Portugal
+				Zonas de Aceleração de Energias Renováveis (ZAER)
 			</h1>
+			<p class="text-muted-foreground mt-6 text-lg">
+				Portugal está a acelerar a transição energética e a sua participação é decisiva. As ZAER
+				permitem desenvolver projetos renováveis com menor burocracia, maior previsibilidade e
+				benefícios para as comunidades locais.
+			</p>
 			<div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row lg:gap-6">
 				<Button size="lg" href="https://renovaveisparticipa.eu.consider.it/"
 					>Participe no Diálogo</Button
 				>
-				<Button variant="outline" size="lg" href="{base}/areas-aceleracao/">Explore as Áreas</Button
+				<Button variant="outline" size="lg" href="{base}/zonas-aceleracao/"
+					>O que são as ZAER?</Button
 				>
 			</div>
 		</div>
@@ -43,13 +59,212 @@
 
 <section class="py-20 md:py-32">
 	<div class="container">
-		<div class="mx-auto mb-16 max-w-2xl text-center">
+		<div class="mx-auto mb-16 max-w-3xl text-center">
 			<h2 class="font-title text-3xl font-bold sm:text-4xl">
-				Áreas de Aceleração de Energias Renováveis
+				O que são as ZAER e para que servem?
 			</h2>
 			<p class="text-muted-foreground mt-6 text-lg">
-				Explore as áreas designadas para o desenvolvimento de projetos de energia renovável em
-				Portugal. Clique nas áreas do mapa para obter mais informações sobre cada projeto.
+				Uma explicação simples do enquadramento técnico e legal.
+			</p>
+		</div>
+		<div class="mx-auto grid max-w-5xl gap-8 sm:grid-cols-2 lg:gap-12">
+			<div class="flex flex-col items-center text-center">
+				<div class="bg-primary/10 mb-6 flex h-20 w-20 items-center justify-center rounded-full">
+					<div class="bg-primary h-10 w-10 rounded-full"></div>
+				</div>
+				<h3 class="font-title mb-3 text-xl font-semibold">Aceleração de projetos renováveis</h3>
+				<p class="text-muted-foreground">Simplificação e previsibilidade de procedimentos</p>
+			</div>
+			<div class="flex flex-col items-center text-center">
+				<div class="bg-primary/10 mb-6 flex h-20 w-20 items-center justify-center rounded-full">
+					<div class="bg-primary h-10 w-10 rounded-full"></div>
+				</div>
+				<h3 class="font-title mb-3 text-xl font-semibold">Critérios ambientais e territoriais</h3>
+				<p class="text-muted-foreground">Integração de salvaguardas desde a fase de planeamento</p>
+			</div>
+			<div class="flex flex-col items-center text-center">
+				<div class="bg-primary/10 mb-6 flex h-20 w-20 items-center justify-center rounded-full">
+					<div class="bg-primary h-10 w-10 rounded-full"></div>
+				</div>
+				<h3 class="font-title mb-3 text-xl font-semibold">Participação pública</h3>
+				<p class="text-muted-foreground">Envolvimento dos diferentes atores ao longo do processo</p>
+			</div>
+			<div class="flex flex-col items-center text-center">
+				<div class="bg-primary/10 mb-6 flex h-20 w-20 items-center justify-center rounded-full">
+					<div class="bg-primary h-10 w-10 rounded-full"></div>
+				</div>
+				<h3 class="font-title mb-3 text-xl font-semibold">Monitorização contínua</h3>
+				<p class="text-muted-foreground">Acompanhamento e avaliação ao longo do tempo</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="bg-muted/30 py-20 md:py-32">
+	<div class="container">
+		<div class="mx-auto mb-16 max-w-3xl text-center">
+			<h2 class="font-title text-3xl font-bold sm:text-4xl">Porque devo participar?</h2>
+			<p class="text-muted-foreground mt-6 text-lg">
+				A participação é aberta a todos. Descubra porque a sua opinião é importante.
+			</p>
+		</div>
+		<div class="mx-auto grid max-w-6xl gap-8 md:grid-cols-2 lg:grid-cols-4">
+			<!-- Municípios -->
+			<button
+				class="flip-card group h-64 cursor-pointer"
+				onclick={() => toggleCard('municipios')}
+				class:flipped={flippedCards.has('municipios')}
+			>
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<div class="bg-primary/10 mb-6 flex h-16 w-16 items-center justify-center rounded-full">
+							<div class="bg-primary h-8 w-8 rounded-full"></div>
+						</div>
+						<h3 class="font-title text-xl font-semibold">Municípios</h3>
+					</div>
+					<div class="flip-card-back">
+						<p class="text-sm">
+							Porque conhecem o território e ajudam a garantir decisões compatíveis com o
+							planeamento local e as comunidades.
+						</p>
+					</div>
+				</div>
+			</button>
+
+			<!-- Promotores -->
+			<button
+				class="flip-card group h-64 cursor-pointer"
+				onclick={() => toggleCard('promotores')}
+				class:flipped={flippedCards.has('promotores')}
+			>
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<div class="bg-primary/10 mb-6 flex h-16 w-16 items-center justify-center rounded-full">
+							<div class="bg-primary h-8 w-8 rounded-full"></div>
+						</div>
+						<h3 class="font-title text-xl font-semibold">Promotores</h3>
+					</div>
+					<div class="flip-card-back">
+						<p class="text-sm">
+							Porque contribuem para um processo mais previsível, claro e tecnicamente robusto.
+						</p>
+					</div>
+				</div>
+			</button>
+
+			<!-- Entidades ambientais -->
+			<button
+				class="flip-card group h-64 cursor-pointer"
+				onclick={() => toggleCard('entidades')}
+				class:flipped={flippedCards.has('entidades')}
+			>
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<div class="bg-primary/10 mb-6 flex h-16 w-16 items-center justify-center rounded-full">
+							<div class="bg-primary h-8 w-8 rounded-full"></div>
+						</div>
+						<h3 class="font-title text-xl font-semibold">Entidades ambientais</h3>
+					</div>
+					<div class="flip-card-back">
+						<p class="text-sm">
+							Porque asseguram critérios ambientais, salvaguardas e monitorização adequada.
+						</p>
+					</div>
+				</div>
+			</button>
+
+			<!-- Cidadãos -->
+			<button
+				class="flip-card group h-64 cursor-pointer"
+				onclick={() => toggleCard('cidadaos')}
+				class:flipped={flippedCards.has('cidadaos')}
+			>
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<div class="bg-primary/10 mb-6 flex h-16 w-16 items-center justify-center rounded-full">
+							<div class="bg-primary h-8 w-8 rounded-full"></div>
+						</div>
+						<h3 class="font-title text-xl font-semibold">Cidadãos</h3>
+					</div>
+					<div class="flip-card-back">
+						<p class="text-sm">
+							Porque as ZAER podem impactar o seu território e a sua opinião conta.
+						</p>
+					</div>
+				</div>
+			</button>
+		</div>
+		<div class="mt-12 text-center">
+			<Button size="lg" href="https://renovaveisparticipa.eu.consider.it/">Participe!</Button>
+		</div>
+	</div>
+</section>
+
+<style>
+	.flip-card {
+		perspective: 1000px;
+		background: transparent;
+		border: none;
+		padding: 0;
+	}
+
+	.flip-card-inner {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		transition: transform 0.6s;
+		transform-style: preserve-3d;
+	}
+
+	.flip-card:hover .flip-card-inner,
+	.flip-card.flipped .flip-card-inner {
+		transform: rotateY(180deg);
+	}
+
+	.flip-card-front,
+	.flip-card-back {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		backface-visibility: hidden;
+		border-radius: 0.5rem;
+		border: 1px solid hsl(var(--border));
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 2rem;
+		text-align: center;
+	}
+
+	.flip-card-front {
+		background-color: white;
+	}
+
+	.flip-card-back {
+		background-color: white;
+		color: hsl(var(--foreground));
+		transform: rotateY(180deg);
+	}
+
+	.flip-card:hover .flip-card-front,
+	.flip-card.flipped .flip-card-front {
+		box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+	}
+</style>
+
+<section class="py-20 md:py-32">
+	<div class="container">
+		<div class="mx-auto mb-16 max-w-2xl text-center">
+			<h2 class="font-title text-3xl font-bold sm:text-4xl">
+				Zonas de Aceleração de Energias Renováveis
+			</h2>
+			<p class="text-muted-foreground mt-6 text-lg">
+				Portugal está a identificar e planear as Zonas de Aceleração de Energias Renováveis (ZAER) —
+				locais adequados para a instalação de energia solar e eólica com licenciamento ambiental
+				simplificado, conforme a Diretiva Europeia RED III. Este trabalho inovador procura conciliar
+				o desenvolvimento das energias renováveis com a proteção ambiental, a coesão territorial e a
+				participação pública informada.
 			</p>
 		</div>
 		<div class="grid gap-8 lg:h-[40rem] lg:grid-cols-3 lg:gap-12">
@@ -86,7 +301,9 @@
 					<Button size="lg" href="https://renovaveisparticipa.eu.consider.it/"
 						>Participar no Diálogo</Button
 					>
-					<Button variant="outline" size="lg" href="{base}/faq/">Ver FAQ</Button>
+					<Button variant="outline" size="lg" href="{base}/perguntas-frequentes/"
+						>Ver Perguntas Frequentes</Button
+					>
 				</div>
 			</div>
 		</div>

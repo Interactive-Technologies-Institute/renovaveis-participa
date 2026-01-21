@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let title: string;
-	export let description: string;
+	export let description: string | undefined = undefined;
 </script>
 
 <div class="relative w-full overflow-hidden">
@@ -9,8 +9,10 @@
 		<h1 class="font-title mb-6 text-5xl font-bold md:text-6xl lg:text-7xl">
 			{title}
 		</h1>
-		<p class="text-muted-foreground mx-auto max-w-2xl text-lg md:text-xl">
-			{description}
-		</p>
+		{#if description}
+			<p class="text-muted-foreground mx-auto max-w-2xl text-lg md:text-xl">
+				{description}
+			</p>
+		{/if}
 	</div>
 </div>

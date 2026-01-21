@@ -2,10 +2,7 @@
 	import PageHeader from '@/components/page-header.svelte';
 </script>
 
-<PageHeader
-	title="Diretrizes Europeias"
-	description="Informações sobre as diretrizes europeias para o desenvolvimento de energias renováveis."
-/>
+<PageHeader title="Diretrizes Europeias" />
 <div class="container my-12 md:my-24">
 	<div class="typography">
 		<h2>
@@ -23,18 +20,24 @@
 			território selecionado. A mesma Diretiva prevê que, antes da sua adoção, o plano ou planos que
 			designam as zonas de aceleração da implantação de energias renováveis devem ser sujeitos a uma
 			avaliação ambiental nos termos da Diretiva 2001/42/CE do Parlamento Europeu e do Conselho.
-			Para mais informações consulte a Diretiva aqui .
+			Para mais informações consulte a Diretiva <a
+				href="https://eur-lex.europa.eu/legal-content/PT/TXT/HTML/?uri=OJ:L_202302413"
+				target="_blank">aqui</a
+			>.
 		</p>
 
 		<h2>RECOMENDAÇÃO (UE) 2024/1343 DA COMISSÃO de 13 de maio de 2024</h2>
 		<p>
 			A Recomendação (UE) 2024/1343 da Comissão Europeia incentiva a criação de Áreas de Aceleração
-			de Energias Renováveis (AAER) para acelerar os licenciamentos de projetos de energias
+			de Energias Renováveis (ZAER) para acelerar os licenciamentos de projetos de energias
 			renováveis. Estas zonas são áreas designadas como particularmente propícias, onde os
 			procedimentos para a construção de infraestruturas de energias renováveis (como parques
 			eólicos e solares) e as infraestruturas de rede necessárias são simplificados e acelerados. Os
 			projetos nestas áreas beneficiam de prazos de licenciamento mais curtos e de uma avaliação
-			ambiental simplificada Para mais informações consulte a Recomendação aqui .
+			ambiental simplificada Para mais informações consulte a Recomendação <a
+				href="https://eur-lex.europa.eu/legal-content/PT/TXT/?uri=CELEX:32024H1343"
+				target="_blank">aqui</a
+			>.
 		</p>
 
 		<h2>PACTO ECOLÓGICO EUROPEU</h2>
@@ -46,7 +49,10 @@
 			justa, sublinhando a necessidade de todos os domínios políticos contribuírem para a luta
 			contra as alterações climáticas. A estratégia apoia medidas em todos os setores económicos que
 			abrangem a energia, os transportes, a indústria, a agricultura e o financiamento sustentável,
-			entre outros. Para mais informações consulte o Pacto aqui .
+			entre outros. Para mais informações consulte o Pacto <a
+				href="https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal_pt"
+				target="_blank">aqui</a
+			>.
 		</p>
 		<h2>PLANO REPowerEU</h2>
 		<p>
@@ -60,7 +66,10 @@
 			mantendo, no entanto, uma visão estratégica sobre os possíveis impactes ambientais. Este plano
 			está integrado no Mecanismo de Recuperação e Resiliência (MRR) para financiar projetos e
 			reformas, visando tornar a UE mais independente e resiliente a longo prazo. Para mais
-			informações consulte o Plano aqui .
+			informações consulte o Plano <a
+				href="https://commission.europa.eu/topics/energy/repowereu_pt"
+				target="_blank">aqui</a
+			>.
 		</p>
 	</div>
 </div>

@@ -2,12 +2,14 @@
 	import PageHeader from '@/components/page-header.svelte';
 </script>
 
-<PageHeader
-	title="Legislação Nacional"
-	description="Informações sobre a legislação nacional portuguesa relativa às energias renováveis."
-/>
+<PageHeader title="Legislação Nacional" />
 <div class="container my-12 md:my-24">
 	<div class="typography">
+		<p>
+			O processo das ZAER enquadra-se em legislação europeia e nacional que visa acelerar a
+			transição energética, garantindo simultaneamente a proteção ambiental e a participação
+			pública.
+		</p>
 		<h2>Plano Nacional de Energia e Clima (PNEC 2030)</h2>
 		<p>
 			O Plano Nacional Energia e Clima 2030 (PNEC 2030) é o principal instrumento de política
@@ -30,7 +32,12 @@
 				eficiência energética e interligações, e concretiza as políticas e medidas para as alcançar.
 			</li>
 		</ul>
-		<p>Para mais informações consulte o Plano aqui.</p>
+		<p>
+			Para mais informações consulte o Plano <a
+				href="https://diariodarepublica.pt/dr/detalhe/resolucao-conselho-ministros/53-2020-137618093"
+				target="_blank">aqui</a
+			>.
+		</p>
 
 		<h2>Roteiro para a Neutralidade Carbónica (RNC 2050)</h2>
 		<p>
@@ -53,6 +60,11 @@
 				contributo, em particular no que respeita à produção de eletricidade e aos transportes.
 			</li>
 		</ul>
-		<p>Para mais informações consulte o Plano aqui.</p>
+		<p>
+			Para mais informações consulte o Plano <a
+				href="https://files.diariodarepublica.pt/1s/2019/07/12300/0320803299.pdf"
+				target="_blank">aqui</a
+			>.
+		</p>
 	</div>
 </div>

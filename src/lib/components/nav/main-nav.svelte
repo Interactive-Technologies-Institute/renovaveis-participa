@@ -16,7 +16,9 @@
 		<NavigationMenu.Item>
 			<NavigationMenu.Link>
 				{#snippet child()}
-					<a href="{base}/faq/" class={navigationMenuTriggerStyle()}>FAQ</a>
+					<a href="{base}/perguntas-frequentes/" class={navigationMenuTriggerStyle()}
+						>Perguntas Frequentes</a
+					>
 				{/snippet}
 			</NavigationMenu.Link>
 		</NavigationMenu.Item>
@@ -35,10 +37,13 @@
 						<NavigationMenu.Link href="{base}/participacao-publica/">
 							Participação Pública
 						</NavigationMenu.Link>
+						<NavigationMenu.Link href="{base}/metodologia-participacao-publica/">
+							Metodologia de Participação Pública
+						</NavigationMenu.Link>
 						<NavigationMenu.Link href="{base}/processo-participacao/">
 							Processo de Participação
 						</NavigationMenu.Link>
-						<NavigationMenu.Link href="{base}/focus-groups/">Focus Groups</NavigationMenu.Link>
+						<NavigationMenu.Link href="{base}/grupos-focais/">Grupos Focais</NavigationMenu.Link>
 						<NavigationMenu.Link href="{base}/entidades-envolvidas/">
 							Entidades Envolvidas
 						</NavigationMenu.Link>
@@ -51,9 +56,11 @@
 			<NavigationMenu.Content>
 				<ul class="grid w-[200px] gap-4 p-2">
 					<li>
-						<NavigationMenu.Link href="{base}/aae/">AAE</NavigationMenu.Link>
-						<NavigationMenu.Link href="{base}/areas-aceleracao/"
-							>Áreas de Aceleração</NavigationMenu.Link
+						<NavigationMenu.Link href="{base}/avaliacao-ambiental-estrate/"
+							>Avaliação Ambiental Estratégica</NavigationMenu.Link
+						>
+						<NavigationMenu.Link href="{base}/zonas-aceleracao/"
+							>Zonas de Aceleração</NavigationMenu.Link
 						>
 						<NavigationMenu.Link href="{base}/diretrizes-europeias/">
 							Diretrizes Europeias
