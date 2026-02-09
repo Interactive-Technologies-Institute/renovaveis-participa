@@ -25,5 +25,13 @@
 			dimensão, natureza e características. Uma das grandes vantagens da AAE é reduzir a incerteza
 			na AIA.
 		</p>
+
+		<div class="my-8">
+			<img
+				src="/images/aaepszaer.jpg"
+				alt="Diagrama do processo de Avaliação Ambiental Estratégica"
+				class="h-auto w-full max-w-2xl"
+			/>
+		</div>
 	</div>
 </div>

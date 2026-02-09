@@ -18,9 +18,9 @@
 
 <div class="bg-background flex h-full flex-col">
 	<div class="border-b p-6">
-		<h2 class="text-foreground text-2xl font-bold">Áreas de Aceleração</h2>
+		<h2 class="text-foreground text-2xl font-bold">Zonas de Aceleração</h2>
 		<p class="text-muted-foreground mt-2">
-			Explore as áreas designadas para desenvolvimento de energias renováveis
+			Explore as zonas designadas para desenvolvimento de energias renováveis
 		</p>
 	</div>
 	<div class="flex-1 overflow-y-auto">

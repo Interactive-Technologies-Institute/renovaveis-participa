@@ -66,5 +66,20 @@
 				target="_blank">aqui</a
 			>.
 		</p>
+
+		<h2>Decreto-Lei n.º 15/2022</h2>
+		<p>
+			Diploma que reestrutura a organização e o funcionamento do Sistema Elétrico Nacional (SEN) em
+			Portugal, estabelecendo as regras para o autoconsumo de energia renovável (Unidades de
+			Produção para Autoconsumo - UPACs), as Comunidades de Energia Renovável (CER) e modernizando o
+			quadro legal para a produção, armazenamento e comercialização de eletricidade, transpondo
+			diretivas europeias e promovendo a transição energética e a descarbonização.
+		</p>
+		<p>
+			Para mais informações consulte o Plano <a
+				href="https://diariodarepublica.pt/dr/detalhe/decreto-lei/15-2022-177634016"
+				target="_blank">aqui</a
+			>.
+		</p>
 	</div>
 </div>

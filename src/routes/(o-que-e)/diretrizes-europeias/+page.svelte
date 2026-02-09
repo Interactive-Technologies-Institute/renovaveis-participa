@@ -28,7 +28,7 @@
 
 		<h2>RECOMENDAÇÃO (UE) 2024/1343 DA COMISSÃO de 13 de maio de 2024</h2>
 		<p>
-			A Recomendação (UE) 2024/1343 da Comissão Europeia incentiva a criação de Áreas de Aceleração
+			A Recomendação (UE) 2024/1343 da Comissão Europeia incentiva a criação de Zonas de Aceleração
 			de Energias Renováveis (ZAER) para acelerar os licenciamentos de projetos de energias
 			renováveis. Estas zonas são áreas designadas como particularmente propícias, onde os
 			procedimentos para a construção de infraestruturas de energias renováveis (como parques

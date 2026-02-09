@@ -4,6 +4,7 @@
 	import MapSidePanel from '@/components/map/map-side-panel.svelte';
 	import Map from '@/components/map/map.svelte';
 	import { Button } from '@/components/ui/button';
+	import * as Card from '@/components/ui/card';
 
 	let selectedArea: RenewableArea | null = $state(null);
 	let flippedCards = $state<Set<string>>(new Set());
@@ -200,6 +201,82 @@
 	</div>
 </section>
 
+<section class="py-20 md:py-32">
+	<div class="container">
+		<div class="mx-auto mb-16 max-w-2xl text-center">
+			<h2 class="font-title text-3xl font-bold sm:text-4xl">
+				Zonas de Aceleração de Energias Renováveis
+			</h2>
+			<p class="text-muted-foreground mt-6 text-lg">
+				Portugal está a identificar e planear as Zonas de Aceleração de Energias Renováveis (ZAER) —
+				locais adequados para a instalação de energia solar e eólica com licenciamento ambiental
+				simplificado, conforme a Diretiva Europeia RED III. Este trabalho inovador procura conciliar
+				o desenvolvimento das energias renováveis com a proteção ambiental, a coesão territorial e a
+				participação pública informada.
+			</p>
+		</div>
+		<div class="relative">
+			<div class="pointer-events-none grid gap-8 blur-sm lg:h-[40rem] lg:grid-cols-3 lg:gap-12">
+				<div class="lg:col-span-1">
+					<div class="bg-card overflow-hidden rounded-lg border lg:h-[40rem]">
+						<MapSidePanel bind:selectedArea />
+					</div>
+				</div>
+				<div class="order-first lg:order-last lg:col-span-2">
+					<div class="bg-card h-[40rem] overflow-hidden rounded-lg border">
+						<Map
+							zoom={6}
+							lat={39.3999}
+							lng={-8.2245}
+							selectedAreaId={selectedArea?.id}
+							onAreaSelect={handleAreaSelect}
+						/>
+					</div>
+				</div>
+			</div>
+			<div class="absolute inset-0 flex items-center justify-center px-4">
+				<Card.Root class="max-w-2xl text-center backdrop-blur-sm">
+					<Card.Header>
+						<Card.Title class="font-title text-2xl font-bold"
+							>O que é que se vai passar aqui?</Card.Title
+						>
+					</Card.Header>
+					<Card.Content>
+						Um <strong>Espaço de Diálogo</strong> aberto a todos — cidadãos, autarquias, empresas, associações
+						e instituições — onde pode conhecer o projeto, explorar mapas, colocar questões e contribuir
+						com ideias e sugestões.
+					</Card.Content>
+					<Card.Footer class="text-primary flex justify-center text-lg font-semibold"
+						>Participe no processo! A sua opinião é essencial.</Card.Footer
+					>
+				</Card.Root>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="py-20 md:py-32">
+	<div class="container">
+		<div class="text-center">
+			<div class="bg-muted/50 rounded-lg p-8">
+				<h3 class="font-title mb-4 text-2xl font-bold">Participe no Espaço de Diálogo</h3>
+				<p class="text-muted-foreground mx-auto mb-6 max-w-2xl">
+					A sua opinião é importante para o desenvolvimento sustentável das energias renováveis em
+					Portugal. Participe no espaço de diálogo e contribua para o futuro energético do país.
+				</p>
+				<div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
+					<Button size="lg" href="https://renovaveisparticipa.eu.consider.it/"
+						>Participar no Diálogo</Button
+					>
+					<Button variant="outline" size="lg" href="{base}/perguntas-frequentes/"
+						>Ver Perguntas Frequentes</Button
+					>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 <style>
 	.flip-card {
 		perspective: 1000px;
@@ -252,60 +329,3 @@
 		box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
 	}
 </style>
-
-<section class="py-20 md:py-32">
-	<div class="container">
-		<div class="mx-auto mb-16 max-w-2xl text-center">
-			<h2 class="font-title text-3xl font-bold sm:text-4xl">
-				Zonas de Aceleração de Energias Renováveis
-			</h2>
-			<p class="text-muted-foreground mt-6 text-lg">
-				Portugal está a identificar e planear as Zonas de Aceleração de Energias Renováveis (ZAER) —
-				locais adequados para a instalação de energia solar e eólica com licenciamento ambiental
-				simplificado, conforme a Diretiva Europeia RED III. Este trabalho inovador procura conciliar
-				o desenvolvimento das energias renováveis com a proteção ambiental, a coesão territorial e a
-				participação pública informada.
-			</p>
-		</div>
-		<div class="grid gap-8 lg:h-[40rem] lg:grid-cols-3 lg:gap-12">
-			<div class="lg:col-span-1">
-				<div class="bg-card overflow-hidden rounded-lg border lg:h-[40rem]">
-					<MapSidePanel bind:selectedArea />
-				</div>
-			</div>
-			<div class="order-first lg:order-last lg:col-span-2">
-				<div class="bg-card h-[40rem] overflow-hidden rounded-lg border">
-					<Map
-						zoom={6}
-						lat={39.3999}
-						lng={-8.2245}
-						selectedAreaId={selectedArea?.id}
-						onAreaSelect={handleAreaSelect}
-					/>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="py-20 md:py-32">
-	<div class="container">
-		<div class="text-center">
-			<div class="bg-muted/50 rounded-lg p-8">
-				<h3 class="font-title mb-4 text-2xl font-bold">Participe no Espaço de Diálogo</h3>
-				<p class="text-muted-foreground mx-auto mb-6 max-w-2xl">
-					A sua opinião é importante para o desenvolvimento sustentável das energias renováveis em
-					Portugal. Participe no espaço de diálogo e contribua para o futuro energético do país.
-				</p>
-				<div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
-					<Button size="lg" href="https://renovaveisparticipa.eu.consider.it/"
-						>Participar no Diálogo</Button
-					>
-					<Button variant="outline" size="lg" href="{base}/perguntas-frequentes/"
-						>Ver Perguntas Frequentes</Button
-					>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>

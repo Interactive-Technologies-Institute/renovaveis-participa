@@ -2,7 +2,7 @@
 	import PageHeader from '@/components/page-header.svelte';
 </script>
 
-<PageHeader title="Áreas de Aceleração" />
+<PageHeader title="Zonas de Aceleração" />
 <div class="container my-12 md:my-24">
 	<div class="typography">
 		<p>

@@ -16,23 +16,23 @@
 			</b>
 		</p>
 		<ul>
-			<li>Acciona Energia</li>
-			<li>Aquila Clean Energy</li>
 			<li>Associação Nacional de Municípios Portugueses (ANMP)</li>
 			<li>Associação Portuguesa de Avaliação de Impactes (APAI)</li>
-			<li>Associação Portuguesa de Energias Renováveis (APREN)</li>
+			<li>Associação Portuguesa de Energias Renováveis (APREN) e demais empresas do setor</li>
 			<li>Agência Portuguesa do Ambiente (APA)</li>
 			<li>Associação Portuguesa dos Arquitectos Paisagistas (APAP)</li>
-			<li>Coligação C7:</li>
-			<ul>
-				<li>Associação Nacional de Conservação da Natureza (QUERCUS)</li>
-				<li>Associação Natureza Portugal em associação com WWF (ANP WWF)</li>
-				<li>Associação Portuguesa para a Conservação da Biodiversidade (FAPAS)</li>
-				<li>Associação Sistema Terrestre Sustentável (ZERO)</li>
-				<li>Grupo de Estudos de Ordenamento do Território e Ambiente (GEOTA)</li>
-				<li>Liga para a Protecção da Natureza (LPN)</li>
-				<li>Sociedade Portuguesa para o Estudo das Aves (SPEA)</li>
-			</ul>
+			<li>
+				Coligação C7:
+				<ul>
+					<li>Associação Nacional de Conservação da Natureza (QUERCUS)</li>
+					<li>Associação Natureza Portugal em associação com WWF (ANP WWF)</li>
+					<li>Associação Portuguesa para a Conservação da Biodiversidade (FAPAS)</li>
+					<li>Associação Sistema Terrestre Sustentável (ZERO)</li>
+					<li>Grupo de Estudos de Ordenamento do Território e Ambiente (GEOTA)</li>
+					<li>Liga para a Protecção da Natureza (LPN)</li>
+					<li>Sociedade Portuguesa para o Estudo das Aves (SPEA)</li>
+				</ul>
+			</li>
 			<li>Comissão de Coordenação e Desenvolvimento Regional do Alentejo, I.P. (CCDR Alentejo)</li>
 			<li>Comissão de Coordenação e Desenvolvimento Regional do Algarve, I.P. (CCDR Algarve)</li>
 			<li>Comissão de Coordenação e Desenvolvimento Regional do Centro, I.P. (CCDR Centro)</li>
@@ -43,28 +43,19 @@
 			<li>Direção-Geral de Agricultura e Desenvolvimento Rural (DGADR)</li>
 			<li>Direção-Geral de Energia e Geologia (DGEG)</li>
 			<li>Direção-Geral do Território (DGT)</li>
-			<li>EDP renováveis</li>
 			<li>Empresa de Desenvolvimento Mineiro, SA (EDM)</li>
-			<li>Endesa</li>
 			<li>Entidade Reguladora dos Serviços Energéticos (ERSE)</li>
 			<li>E-REDES</li>
 			<li>Federação Nacional dos Baldios (BALADI)</li>
-			<li>Finerge</li>
-			<li>GALP</li>
-			<li>Greenvolt</li>
 			<li>Grupo Lobo</li>
-			<li>Iberdrola</li>
 			<li>Infraestruturas de Portugal (IP)</li>
 			<li>Instituto da Conservação da Natureza e das Florestas (ICNF)</li>
-			<li>Lightsource bp</li>
 			<li>Morcegos.pt</li>
-			<li>Nadara</li>
 			<li>Património Cultural, I.P.</li>
 			<li>Redes Energéticas Nacionais (REN)</li>
 			<li>Sociedade Portuguesa de Botânica (SPB)</li>
 			<li>Tagis Centro de Conservação das Borboletas de Portugal</li>
 			<li>The Nature Conservancy (TNC)</li>
-			<li>TotalEnergies</li>
 			<li>Turismo de Portugal, I.P.</li>
 			<li>Vulture Conservation Foundation (VCF)</li>
 		</ul>
