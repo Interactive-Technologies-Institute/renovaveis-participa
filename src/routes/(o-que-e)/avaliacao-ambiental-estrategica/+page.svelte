@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import PageHeader from '@/components/page-header.svelte';
 </script>
 
@@ -28,7 +29,7 @@
 
 		<div class="my-8">
 			<img
-				src="/images/aaepszaer.jpg"
+				src="{base}/images/aaepszaer.jpg"
 				alt="Diagrama do processo de Avaliação Ambiental Estratégica"
 				class="h-auto w-full max-w-2xl"
 			/>
