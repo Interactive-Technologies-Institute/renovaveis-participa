@@ -13,7 +13,7 @@
 				<div class="bg-primary flex h-8 w-8 items-center justify-center rounded-md">
 					<Graph height={20} width={20} class="text-primary-foreground" />
 				</div>
-				<span class="font-title text-lg font-bold">RenováveisParticipa</span>
+				<span class="font-title hidden text-lg font-bold sm:inline">RenováveisParticipa</span>
 			</a>
 		</div>
 		<MainNav class="hidden lg:flex" />

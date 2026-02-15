@@ -44,7 +44,7 @@
 			name: 'Doutora Sofia Simões',
 			role: 'Coordenação da Integração da Informação Espacializada',
 			image: `${base}/images/coordenacao-iie.jpg`,
-			bio: 'Formação de base em Eng. do Ambiente; Doutorada em Sistemas de Energia (Universidade Leiden). Investigadora Principal no LNEG – Laboratório Nacional de Energia e Geologia onde coordena a Unidade de Economia de Recursos. Trabalha diversos temas ao nível de recursos para futuros de baixo carbono (água, minerais, uso do solo). Coordenou o GTAER - Grupo de Trabalho para a definição das Zonas de Aceleração de Energias Renováveis. Coordenou vários trabalhos de análise de usos do solo para a energia como o Atlas do H2 Verde Sustentável, o potencial técnico de renováveis ou a distribuição do consumo de eletricidade na indústria e sua satisfação com solar PV. É Chair do "Renewable Energy Working Party" da Agência Internacional de Energia.'
+			bio: 'Formação de base em Eng. do Ambiente; Doutorada em Sistemas de Energia (Universidade Leiden). Investigadora Principal no LNEG – Laboratório Nacional de Energia e Geologia onde coordena a Unidade de Economia de Recursos. Trabalha diversos temas ao nível de recursos para futuros de baixo carbono (água, minerais, uso do solo). Coordenou o GTAER - Grupo de Trabalho para a definição das Zonas de Aceleração da Implantação de Energias Renováveis. Coordenou vários trabalhos de análise de usos do solo para a energia como o Atlas do H2 Verde Sustentável, o potencial técnico de renováveis ou a distribuição do consumo de eletricidade na indústria e sua satisfação com solar PV. É Chair do "Renewable Energy Working Party" da Agência Internacional de Energia.'
 		},
 		{
 			name: 'Professor Nuno Jardim Nunes',
@@ -65,9 +65,9 @@
 		</div>
 		<div>
 			<h2>
-				Equipa de coordenação responsável pelo desenvolvimento da proposta de Plano Setorial das
-				Zonas de Aceleração de Energias Renováveis (PSZAER) e respetiva Avaliação Ambiental
-				Estratégica (AAE):
+				Equipa de coordenação responsável pelo desenvolvimento da proposta de Programa Setorial das
+				Zonas de Aceleração da Implantação de Energias Renováveis (PSZAER) e respetiva Avaliação
+				Ambiental Estratégica (AAE):
 			</h2>
 			<div class="not-typography mt-12 grid gap-12 md:grid-cols-2">
 				{#each teamMembers as member}

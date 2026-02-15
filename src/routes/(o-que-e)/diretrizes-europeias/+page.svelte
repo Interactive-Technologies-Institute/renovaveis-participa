@@ -11,12 +11,12 @@
 		</h2>
 		<p>
 			A Diretiva 2023/2413 do Parlamento e do Conselho de 18 de outubro de 2023 (Diretiva REDIII),
-			prevê a identificação de zonas de Aceleração de Energias Renováveis, ou seja, locais
-			específicos designados pelos Estados-Membros como particularmente adequados para a instalação
-			de unidades de produção de energia a partir de fontes renováveis com licenciamento ambiental
-			simplificado, à exceção das instalações de combustão de biomassa. Espera-se assim que a
-			implantação de um ou mais tipos específicos de projeto de energia renovável não tenha impactos
-			ambientais significativos, nas áreas propostas, tendo em vista as particularidades do
+			prevê a identificação de zonas de Aceleração da Implantação de Energias Renováveis, ou seja,
+			locais específicos designados pelos Estados-Membros como particularmente adequados para a
+			instalação de unidades de produção de energia a partir de fontes renováveis com licenciamento
+			ambiental simplificado, à exceção das instalações de combustão de biomassa. Espera-se assim
+			que a implantação de um ou mais tipos específicos de projeto de energia renovável não tenha
+			impactos ambientais significativos, nas áreas propostas, tendo em vista as particularidades do
 			território selecionado. A mesma Diretiva prevê que, antes da sua adoção, o plano ou planos que
 			designam as zonas de aceleração da implantação de energias renováveis devem ser sujeitos a uma
 			avaliação ambiental nos termos da Diretiva 2001/42/CE do Parlamento Europeu e do Conselho.
@@ -29,8 +29,8 @@
 		<h2>RECOMENDAÇÃO (UE) 2024/1343 DA COMISSÃO de 13 de maio de 2024</h2>
 		<p>
 			A Recomendação (UE) 2024/1343 da Comissão Europeia incentiva a criação de Zonas de Aceleração
-			de Energias Renováveis (ZAER) para acelerar os licenciamentos de projetos de energias
-			renováveis. Estas zonas são áreas designadas como particularmente propícias, onde os
+			da Implantação de Energias Renováveis (ZAER) para acelerar os licenciamentos de projetos de
+			energias renováveis. Estas zonas são áreas designadas como particularmente propícias, onde os
 			procedimentos para a construção de infraestruturas de energias renováveis (como parques
 			eólicos e solares) e as infraestruturas de rede necessárias são simplificados e acelerados. Os
 			projetos nestas áreas beneficiam de prazos de licenciamento mais curtos e de uma avaliação

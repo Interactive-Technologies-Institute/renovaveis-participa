@@ -7,8 +7,8 @@
 <div class="container my-12 md:my-24">
 	<div class="typography">
 		<p>
-			Estão constituídos quatro grupos focais sobre temas estratégicos para a aceleração de energias
-			renováveis:
+			Estão constituídos quatro grupos focais sobre temas estratégicos para a aceleração da
+			implantação de energias renováveis:
 		</p>
 		<ol>
 			<li>Agrovoltaicos</li>
@@ -24,7 +24,8 @@
 			<p><b>Coordenação:</b> Professores Jorge Cancela e Francisco Moreira</p>
 			<p>
 				<b>Objetivos e âmbito:</b> o interesse, os benefícios e os eventuais constrangimentos das soluções
-				agrovoltaicas no cumprimento do PNEC e em particular nas Zonas de Aceleração de Energias Renováveis.
+				agrovoltaicas no cumprimento do PNEC e em particular nas Zonas de Aceleração da Implantação de
+				Energias Renováveis.
 			</p>
 			<p>
 				<b>Especialistas:</b> Margarida Pinto Correia (EDP), Ricardo Paulino (EDP), Susana Serôdio (APREN),

@@ -12,8 +12,8 @@
 		<div class="grid gap-8 lg:grid-cols-4">
 			<div class="flex flex-col items-start gap-4">
 				<p class="text-muted-foreground max-w-[18rem] text-sm">
-					Espaço de diálogo sobre as Opções Estratégicas para as Zonas de Aceleração de Energias
-					Renováveis em Portugal
+					Espaço de diálogo sobre as Opções Estratégicas para as Zonas de Aceleração da Implantação
+					de Energias Renováveis em Portugal
 				</p>
 				<div class="text-muted-foreground">
 					<p class="text-sm">

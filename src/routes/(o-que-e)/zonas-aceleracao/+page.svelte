@@ -6,10 +6,10 @@
 <div class="container my-12 md:my-24">
 	<div class="typography">
 		<p>
-			De acordo com a Diretiva REDIII as Zonas de Aceleração de Energias Renováveis (ZAER) são
-			territórios designados pelos Estados-Membros como especialmente adequados para a instalação de
-			unidades de produção de energia a partir de fontes renováveis. São Zonas de Aceleração porque
-			beneficiam de um licenciamento ambiental simplificado.
+			De acordo com a Diretiva REDIII as Zonas de Aceleração da Implantação de Energias Renováveis
+			(ZAER) são territórios designados pelos Estados-Membros como especialmente adequados para a
+			instalação de unidades de produção de energia a partir de fontes renováveis. São Zonas de
+			Aceleração porque beneficiam de um licenciamento ambiental simplificado.
 		</p>
 		<p>
 			NOTA IMPORTANTE: as zonas de aceleração servem para acelerar o desenvolvimento de projetos de

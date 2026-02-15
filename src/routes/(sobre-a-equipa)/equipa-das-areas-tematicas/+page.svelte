@@ -4,7 +4,7 @@
 
 <PageHeader
 	title="Equipa das Áreas Temáticas"
-	description="Conheça a equipa de cada Área Temática a desenvolver a proposta de Plano Setorial das Zonas de Aceleração de Energias Renováveis (PSZAER) e respetiva Avaliação Ambiental Estratégica (AAE)."
+	description="Conheça a equipa de cada Área Temática a desenvolver a proposta de Programa Setorial das Zonas de Aceleração da Implantação de Energias Renováveis (PSZAER) e respetiva Avaliação Ambiental Estratégica (AAE)."
 />
 <div class="container my-12 md:my-24">
 	<div class="typography">

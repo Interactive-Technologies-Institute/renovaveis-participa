@@ -1,5 +1,13 @@
 <script lang="ts">
 	import { base } from '$app/paths';
+	import AceleracaoDeProjetosRenovaveisIcon from '$lib/components/icons/aceleracao-de-projetos-renovaveis.svelte';
+	import CidadaoIcon from '$lib/components/icons/cidadao.svelte';
+	import CriteriosAmbientaisETerritoriaisIcon from '$lib/components/icons/criterios-ambientais-e-territoriais.svelte';
+	import EntidadesAmbientaisIcon from '$lib/components/icons/entidades-ambientais.svelte';
+	import MonitorizacaoContinuaIcon from '$lib/components/icons/monitorizacao-continua.svelte';
+	import MunicipiosIcon from '$lib/components/icons/municipios.svelte';
+	import ParticipacaoPublicaIcon from '$lib/components/icons/participacao-publica.svelte';
+	import PromotoresIcon from '$lib/components/icons/promotores.svelte';
 	import { renewableAreas, type RenewableArea } from '$lib/data';
 	import MapSidePanel from '@/components/map/map-side-panel.svelte';
 	import Map from '@/components/map/map.svelte';
@@ -33,7 +41,7 @@
 	<div class="relative z-10 container">
 		<div class="mx-auto max-w-4xl text-center">
 			<h1 class="font-title text-4xl font-bold sm:text-5xl md:text-6xl">
-				Zonas de Aceleração de Energias Renováveis (ZAER)
+				Zonas de Aceleração da Implantação de Energias Renováveis (ZAER)
 			</h1>
 			<p class="text-muted-foreground mt-6 text-lg">
 				Portugal está a acelerar a transição energética e a sua participação é decisiva. As ZAER
@@ -70,30 +78,22 @@
 		</div>
 		<div class="mx-auto grid max-w-5xl gap-8 sm:grid-cols-2 lg:gap-12">
 			<div class="flex flex-col items-center text-center">
-				<div class="bg-primary/10 mb-6 flex h-20 w-20 items-center justify-center rounded-full">
-					<div class="bg-primary h-10 w-10 rounded-full"></div>
-				</div>
+				<AceleracaoDeProjetosRenovaveisIcon class="text-primary mb-6 h-20 w-20" />
 				<h3 class="font-title mb-3 text-xl font-semibold">Aceleração de projetos renováveis</h3>
 				<p class="text-muted-foreground">Simplificação e previsibilidade de procedimentos</p>
 			</div>
 			<div class="flex flex-col items-center text-center">
-				<div class="bg-primary/10 mb-6 flex h-20 w-20 items-center justify-center rounded-full">
-					<div class="bg-primary h-10 w-10 rounded-full"></div>
-				</div>
+				<CriteriosAmbientaisETerritoriaisIcon class="text-primary mb-6 h-20 w-20" />
 				<h3 class="font-title mb-3 text-xl font-semibold">Critérios ambientais e territoriais</h3>
 				<p class="text-muted-foreground">Integração de salvaguardas desde a fase de planeamento</p>
 			</div>
 			<div class="flex flex-col items-center text-center">
-				<div class="bg-primary/10 mb-6 flex h-20 w-20 items-center justify-center rounded-full">
-					<div class="bg-primary h-10 w-10 rounded-full"></div>
-				</div>
+				<ParticipacaoPublicaIcon class="text-primary mb-6 h-20 w-20" />
 				<h3 class="font-title mb-3 text-xl font-semibold">Participação pública</h3>
 				<p class="text-muted-foreground">Envolvimento dos diferentes atores ao longo do processo</p>
 			</div>
 			<div class="flex flex-col items-center text-center">
-				<div class="bg-primary/10 mb-6 flex h-20 w-20 items-center justify-center rounded-full">
-					<div class="bg-primary h-10 w-10 rounded-full"></div>
-				</div>
+				<MonitorizacaoContinuaIcon class="text-primary mb-6 h-20 w-20" />
 				<h3 class="font-title mb-3 text-xl font-semibold">Monitorização contínua</h3>
 				<p class="text-muted-foreground">Acompanhamento e avaliação ao longo do tempo</p>
 			</div>
@@ -110,7 +110,6 @@
 			</p>
 		</div>
 		<div class="mx-auto grid max-w-6xl gap-8 md:grid-cols-2 lg:grid-cols-4">
-			<!-- Municípios -->
 			<button
 				class="flip-card group h-64 cursor-pointer"
 				onclick={() => toggleCard('municipios')}
@@ -118,9 +117,7 @@
 			>
 				<div class="flip-card-inner">
 					<div class="flip-card-front">
-						<div class="bg-primary/10 mb-6 flex h-16 w-16 items-center justify-center rounded-full">
-							<div class="bg-primary h-8 w-8 rounded-full"></div>
-						</div>
+						<MunicipiosIcon class="text-primary mb-6 h-16 w-16" />
 						<h3 class="font-title text-xl font-semibold">Municípios</h3>
 					</div>
 					<div class="flip-card-back">
@@ -131,8 +128,6 @@
 					</div>
 				</div>
 			</button>
-
-			<!-- Promotores -->
 			<button
 				class="flip-card group h-64 cursor-pointer"
 				onclick={() => toggleCard('promotores')}
@@ -140,9 +135,7 @@
 			>
 				<div class="flip-card-inner">
 					<div class="flip-card-front">
-						<div class="bg-primary/10 mb-6 flex h-16 w-16 items-center justify-center rounded-full">
-							<div class="bg-primary h-8 w-8 rounded-full"></div>
-						</div>
+						<PromotoresIcon class="text-primary mb-6 h-16 w-16" />
 						<h3 class="font-title text-xl font-semibold">Promotores</h3>
 					</div>
 					<div class="flip-card-back">
@@ -152,8 +145,6 @@
 					</div>
 				</div>
 			</button>
-
-			<!-- Entidades ambientais -->
 			<button
 				class="flip-card group h-64 cursor-pointer"
 				onclick={() => toggleCard('entidades')}
@@ -161,9 +152,7 @@
 			>
 				<div class="flip-card-inner">
 					<div class="flip-card-front">
-						<div class="bg-primary/10 mb-6 flex h-16 w-16 items-center justify-center rounded-full">
-							<div class="bg-primary h-8 w-8 rounded-full"></div>
-						</div>
+						<EntidadesAmbientaisIcon class="text-primary mb-6 h-16 w-16" />
 						<h3 class="font-title text-xl font-semibold">Entidades ambientais</h3>
 					</div>
 					<div class="flip-card-back">
@@ -173,8 +162,6 @@
 					</div>
 				</div>
 			</button>
-
-			<!-- Cidadãos -->
 			<button
 				class="flip-card group h-64 cursor-pointer"
 				onclick={() => toggleCard('cidadaos')}
@@ -182,9 +169,7 @@
 			>
 				<div class="flip-card-inner">
 					<div class="flip-card-front">
-						<div class="bg-primary/10 mb-6 flex h-16 w-16 items-center justify-center rounded-full">
-							<div class="bg-primary h-8 w-8 rounded-full"></div>
-						</div>
+						<CidadaoIcon class="text-primary mb-6 h-16 w-16" />
 						<h3 class="font-title text-xl font-semibold">Cidadãos</h3>
 					</div>
 					<div class="flip-card-back">
@@ -205,14 +190,14 @@
 	<div class="container">
 		<div class="mx-auto mb-16 max-w-2xl text-center">
 			<h2 class="font-title text-3xl font-bold sm:text-4xl">
-				Zonas de Aceleração de Energias Renováveis
+				Zonas de Aceleração da Implantação de Energias Renováveis
 			</h2>
 			<p class="text-muted-foreground mt-6 text-lg">
-				Portugal está a identificar e planear as Zonas de Aceleração de Energias Renováveis (ZAER) —
-				locais adequados para a instalação de energia solar e eólica com licenciamento ambiental
-				simplificado, conforme a Diretiva Europeia RED III. Este trabalho inovador procura conciliar
-				o desenvolvimento das energias renováveis com a proteção ambiental, a coesão territorial e a
-				participação pública informada.
+				Portugal está a identificar e planear as Zonas de Aceleração da Implantação de Energias
+				Renováveis (ZAER) — locais adequados para a instalação de energia solar e eólica com
+				licenciamento ambiental simplificado, conforme a Diretiva Europeia RED III. Este trabalho
+				inovador procura conciliar o desenvolvimento das energias renováveis com a proteção
+				ambiental, a coesão territorial e a participação pública informada.
 			</p>
 		</div>
 		<div class="relative">
