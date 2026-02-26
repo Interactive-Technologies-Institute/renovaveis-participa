@@ -59,30 +59,36 @@
 
 <div class="container my-12 md:my-24">
 	<div class="typography flex flex-col gap-12">
-		<h2>
-			Equipa de coordenação responsável pelo desenvolvimento da proposta de Programa Setorial das
-			Zonas de Aceleração da Implantação de Energias Renováveis (PSZAER) e respetiva Avaliação
-			Ambiental Estratégica (AAE):
-		</h2>
-		<div class="not-typography mt-12 grid gap-12 md:grid-cols-2">
-			{#each teamMembers as member}
-				<div class="flex flex-col">
-					<Avatar.Root class="mb-6 h-40 w-40">
-						<Avatar.Image src={member.image} alt={member.name} class="object-cover" />
-						<Avatar.Fallback class="text-lg"
-							>{member.name
-								.split(' ')
-								.map((n) => n[0])
-								.join('')}</Avatar.Fallback
-						>
-					</Avatar.Root>
-					<h3 class="text-primary mb-2 text-xl font-semibold">{member.name}</h3>
-					<h4 class="text-muted-foreground mb-4 text-sm font-bold uppercase">
-						{member.role}
-					</h4>
-					<p class="text-muted-foreground text-justify leading-relaxed">{member.bio}</p>
-				</div>
-			{/each}
+		<div>
+			<h2>
+				Equipa de coordenação responsável pelo desenvolvimento da proposta de Programa Setorial das
+				Zonas de Aceleração da Implantação de Energias Renováveis (PSZAER) e respetiva Avaliação
+				Ambiental Estratégica (AAE):
+			</h2>
+			<div class="not-typography mt-12 grid gap-12 md:grid-cols-2">
+				{#each teamMembers as member}
+					<div class="flex flex-col">
+						<Avatar.Root class="mb-6 h-40 w-40">
+							<Avatar.Image src={member.image} alt={member.name} class="object-cover" />
+							<Avatar.Fallback class="text-lg"
+								>{member.name
+									.split(' ')
+									.map((n) => n[0])
+									.join('')}</Avatar.Fallback
+							>
+						</Avatar.Root>
+						<h3 class="text-primary mb-2 text-xl font-semibold">{member.name}</h3>
+						<h4 class="text-muted-foreground mb-4 text-sm font-bold uppercase">
+							{member.role}
+						</h4>
+						<p class="text-muted-foreground text-justify leading-relaxed">{member.bio}</p>
+					</div>
+				{/each}
+			</div>
+		</div>
+		<div>
+			<h2>Entidade Contratante: EMER 2030</h2>
+			<img src="{base}/images/logo-emer.png" alt="EMER 2030" class="h-20" />
 		</div>
 	</div>
 </div>
