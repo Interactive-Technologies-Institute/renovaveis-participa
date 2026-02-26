@@ -2,6 +2,7 @@
 	import { base } from '$app/paths';
 	import { buttonVariants } from '@/components/ui/button';
 	import * as Popover from '@/components/ui/popover';
+	import * as Tooltip from '@/components/ui/tooltip';
 	import { cn } from '@/utils';
 	import type { HTMLAnchorAttributes, HTMLAttributes } from 'svelte/elements';
 
@@ -24,7 +25,7 @@
 		onclick={() => {
 			open = false;
 		}}
-		class={cn('text-xl font-medium', className)}
+		class={cn('w-fit text-xl font-medium', className)}
 		{...props}
 	>
 		{content}
@@ -61,13 +62,20 @@
 	>
 		<div class="flex flex-col gap-5 overflow-auto px-6 py-6">
 			{@render NavItem({ href: '/perguntas-frequentes/', content: 'Perguntas Frequentes' })}
-			<div class="relative inline-flex w-fit">
-				{@render NavItem({ href: '/relatorios/', content: 'Relatórios' })}
-				<span
-					class="bg-primary pointer-events-none absolute top-0 -right-2 size-2 rounded-full"
-					aria-hidden="true"
-				></span>
-			</div>
+			<Tooltip.Provider>
+				<Tooltip.Root open={true} delayDuration={60}>
+					<Tooltip.Trigger>
+						{#snippet child({ props })}
+							{@render NavItem({
+								href: '/relatorios/',
+								content: 'Relatórios',
+								...props
+							})}
+						{/snippet}
+					</Tooltip.Trigger>
+					<Tooltip.Content side="right" sideOffset={8}>Novo relatório disponível</Tooltip.Content>
+				</Tooltip.Root>
+			</Tooltip.Provider>
 			<div class="flex flex-col gap-2">
 				<div class="text-muted-foreground text-sm font-medium">Estratégia de Participação</div>
 				<div class="flex flex-col gap-2">

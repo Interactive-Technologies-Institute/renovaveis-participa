@@ -2,6 +2,7 @@
 	import { base } from '$app/paths';
 	import * as NavigationMenu from '@/components/ui/navigation-menu';
 	import { navigationMenuTriggerStyle } from '@/components/ui/navigation-menu/navigation-menu-trigger.svelte';
+	import * as Tooltip from '@/components/ui/tooltip';
 	import type { HTMLAttributes } from 'svelte/elements';
 
 	let {
@@ -25,13 +26,20 @@
 		<NavigationMenu.Item>
 			<NavigationMenu.Link>
 				{#snippet child()}
-					<div class="relative inline-flex">
-						<a href="{base}/relatorios/" class={navigationMenuTriggerStyle()}>Relatórios</a>
-						<span
-							class="bg-primary pointer-events-none absolute top-1 right-2 size-2 rounded-full"
-							aria-hidden="true"
-						></span>
-					</div>
+					<Tooltip.Provider>
+						<Tooltip.Root open={true}>
+							<Tooltip.Trigger>
+								{#snippet child({ props })}
+									<a href="{base}/relatorios/" class={navigationMenuTriggerStyle()} {...props}>
+										Relatórios
+									</a>
+								{/snippet}
+							</Tooltip.Trigger>
+							<Tooltip.Content side="bottom" sideOffset={0}>
+								Novo relatório disponível
+							</Tooltip.Content>
+						</Tooltip.Root>
+					</Tooltip.Provider>
 				{/snippet}
 			</NavigationMenu.Link>
 		</NavigationMenu.Item>
