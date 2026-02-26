@@ -17,7 +17,7 @@
 			</a>
 		</div>
 		<MainNav class="hidden lg:flex" />
-		<MobileNav class="flex lg:hidden" />
 		<Button href="https://renovaveisparticipa.eu.consider.it/">PARTICIPE!</Button>
+		<MobileNav class="flex lg:hidden" />
 	</div>
 </header>

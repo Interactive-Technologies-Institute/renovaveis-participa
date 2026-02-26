@@ -61,7 +61,13 @@
 	>
 		<div class="flex flex-col gap-5 overflow-auto px-6 py-6">
 			{@render NavItem({ href: '/perguntas-frequentes/', content: 'Perguntas Frequentes' })}
-			{@render NavItem({ href: '/relatorios/', content: 'Relatórios' })}
+			<div class="relative inline-flex w-fit">
+				{@render NavItem({ href: '/relatorios/', content: 'Relatórios' })}
+				<span
+					class="bg-primary pointer-events-none absolute top-0 -right-2 size-2 rounded-full"
+					aria-hidden="true"
+				></span>
+			</div>
 			<div class="flex flex-col gap-2">
 				<div class="text-muted-foreground text-sm font-medium">Estratégia de Participação</div>
 				<div class="flex flex-col gap-2">

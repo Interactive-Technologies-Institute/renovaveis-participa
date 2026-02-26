@@ -10,17 +10,18 @@
 
 <div class="container mx-auto max-w-4xl px-4 py-8">
 	<section class="mb-12">
-		<h2 class="mb-6 text-2xl font-bold">Sobre as ZAER</h2>
+		<h2 class="mb-6 text-2xl font-bold">Sobre as ZAER e o PSZAER</h2>
 		<Accordion.Root type="single" class="w-full">
 			<Accordion.Item value="zaer-1">
 				<Accordion.Trigger>O que são as ZAER?</Accordion.Trigger>
 				<Accordion.Content class="typography small">
 					<p>
-						De acordo com a Diretiva REDIII as Zonas de Aceleração de Energias Renováveis (ZAER) são
-						territórios designados pelos Estados-Membros como especialmente adequados para a
-						instalação de unidades de produção de energia a partir de fontes renováveis, em especial
-						solar e eólico onshore. São Zonas de Aceleração porque beneficiam de um licenciamento
-						ambiental simplificado.
+						A Diretiva (UE) 2023/2413, do Parlamento Europeu e do Conselho, de 18 de outubro de
+						2023, relativa à promoção da utilização de energia proveniente de fontes renováveis (RED
+						III), determina que cada Estado-Membro deve assegurar que as autoridades competentes
+						adotam um ou mais planos que designem Zonas de Aceleração da Implantação de Energias
+						Renováveis, com vista à simplificação e celeridade dos procedimentos administrativos e
+						de licenciamento, salvaguardando valores ambientais e territoriais relevantes.
 					</p>
 					<p>
 						NOTA IMPORTANTE: as zonas de aceleração servem para acelerar o desenvolvimento de
@@ -45,31 +46,91 @@
 						</li>
 						<li>A possibilidade de usos múltiplos dos territórios identificados.</li>
 					</ul>
-					<p>geral@emer.gov.pt<br />www.emer.gov.pt</p>
 				</Accordion.Content>
 			</Accordion.Item>
 
 			<Accordion.Item value="zaer-2">
-				<Accordion.Trigger>As ZAER substituem outros processos de licenciamento?</Accordion.Trigger>
+				<Accordion.Trigger>O que é o PSZAER?</Accordion.Trigger>
 				<Accordion.Content class="typography small">
 					<p>
-						Não. As ZAER inserem-se num regime de licenciamento ambiental simplificado, mas não
-						eliminam outros procedimentos obrigatórios. Continuam a aplicar-se regimes como o
-						licenciamento municipal, autorizações a nível do património cultural, recursos hídricos,
-						ligação à rede elétrica, entre outros. O licenciamento elétrico mantém-se obrigatório,
-						embora venha a ser simplificado no âmbito das ZAER.
+						O Programa Setorial das Zonas de Aceleração da Implantação de Energias Renováveis, é o
+						instrumento estruturante que procura integrar, de forma coordenada e territorialmente
+						consistente, os objetivos nacionais de política energética e climática, bem como os
+						objetivos ambientais, de conservação da natureza e de defesa do património cultural,
+						permitindo enquadrar a identificação e delimitação das Zonas de Aceleração da
+						Implantação de Energias Renováveis numa lógica de planeamento estratégico, de
+						antecipação de conflitos de uso do solo, de reforço da previsibilidade e da segurança
+						jurídica das decisões administrativas, e de promoção de uma implementação mais célere e
+						eficaz dos projetos de energias renováveis, através da identificação de zonas cuja
+						pré-análise permite um licenciamento mais simplificado.
 					</p>
-				</Accordion.Content>
-			</Accordion.Item>
-
-			<Accordion.Item value="zaer-3">
-				<Accordion.Trigger>As ZAER já estão definidas?</Accordion.Trigger>
-				<Accordion.Content class="typography small">
 					<p>
-						Não. Nesta fase, as ZAER ainda não estão delimitadas no território. O processo
-						encontra-se numa etapa estratégica e preparatória, em que se definem critérios, opções e
-						orientações que irão apoiar o seu futuro mapeamento.
+						O PSZAER contribui para o cumprimento da reforma de «Simplificação do quadro jurídico e
+						regulamentar aplicável aos projetos de energias renováveis» do PRR - Plano de
+						Recuperação e Resiliência (RP-C21-r48), constituindo parte integrante do calendário de
+						atribuição de nova capacidade em matéria de energias renováveis para o desenvolvimento
+						de projetos de energias renováveis.
 					</p>
+					<p>
+						A elaboração do PSZAER, cujo procedimento de elaboração foi publicado em Diário da
+						República pelo Despacho n.º 1532-B/2026, de 6 de fevereiro, enquanto instrumento de
+						planeamento destinado a definir orientações estratégicas e diretivas para a
+						identificação, delimitação e implementação das Zonas de Aceleração da Implantação de
+						Energias Renováveis (ZAER), procura assegurar os seguintes objetivos:
+					</p>
+					<ul>
+						<li>
+							a) Contribuir para a concretização do PNEC 2030 e para o cumprimento das metas de
+							neutralidade carbónica;
+						</li>
+						<li>
+							b) Promover o aumento da produção de energia a partir de fontes renováveis de forma
+							ordenada e sustentável;
+						</li>
+						<li>
+							c) Identificar medidas destinadas à simplificação e à celeridade dos procedimentos
+							administrativos e de licenciamento dos projetos inseridos nas ZAER, nos termos da
+							Diretiva (UE) 2023/2413 (RED III);
+						</li>
+						<li>
+							d) Garantir a compatibilização do PSZAER com os instrumentos de gestão territorial em
+							vigor;
+						</li>
+						<li>
+							e) Assegurar a proteção ambiental e paisagística, considerando os valores naturais e
+							culturais em presença no território;
+						</li>
+						<li>
+							f) Definir critérios técnicos e operacionais para a identificação e delimitação das
+							ZAER, incluindo avaliação do potencial energético e dos impactos ambientais;
+						</li>
+						<li>
+							g) Promover a articulação interinstitucional entre as entidades públicas e privadas
+							envolvidas, garantindo coerência entre as políticas públicas setoriais e o ordenamento
+							do território;
+						</li>
+						<li>
+							h) Contribuir para a segurança e soberania do abastecimento energético, através da
+							identificação de localizações estratégicas para desenvolvimento de projetos de energia
+							renovável;
+						</li>
+						<li>
+							i) Incentivar a inovação tecnológica e industrial no setor das energias renováveis, em
+							linha com a estratégia do XXV Governo Constitucional para a transição energética;
+						</li>
+						<li>
+							j) Criar oportunidades de emprego verde e de desenvolvimento económico local,
+							promovendo a participação das comunidades nas áreas de influência das ZAER;
+						</li>
+						<li>
+							k) Apoiar a integração de energias renováveis na rede elétrica nacional, promovendo
+							soluções de flexibilidade, armazenamento e redes inteligentes;
+						</li>
+						<li>
+							l) Assegurar a monitorização e avaliação periódica dos impactos sociais, económicos e
+							ambientais das ZAER.
+						</li>
+					</ul>
 				</Accordion.Content>
 			</Accordion.Item>
 		</Accordion.Root>
@@ -107,7 +168,6 @@
 						processo de decisão, sendo analisados e integrados de forma estruturada, transparente e
 						metodologicamente robusta no processo de AAE e no desenvolvimento do Programa Setorial.
 					</p>
-					<p>geral@emer.gov.pt<br />www.emer.gov.pt</p>
 					<p>
 						Embora não determinem automaticamente as decisões finais, os contributos são essenciais
 						para aprimorar o diagnóstico, identificar oportunidades e riscos, percecionar
@@ -125,7 +185,7 @@
 						(considerar a cronologia esperada na página principal), sempre que relevantes,
 						potenciando a identificação de riscos, oportunidades, preocupações territoriais e
 						prioridades sociais que apoiam uma tomada de decisão mais informada, equilibrada e
-						alinhada com as expectativas da sociedade.
+						alinhada com as expectativas da sociedade
 					</p>
 				</Accordion.Content>
 			</Accordion.Item>
@@ -157,7 +217,6 @@
 						documentos de elevado rigor técnico, sustentados em estudos técnicos e científicos e nos
 						contributos recolhidos ao longo do processo participativo.
 					</p>
-					<p>geral@emer.gov.pt<br />www.emer.gov.pt</p>
 					<p>
 						Esta fase de discussão pública visa a recolha de observações e sugestões sobre as
 						soluções apresentadas na proposta de programa.

@@ -25,7 +25,13 @@
 		<NavigationMenu.Item>
 			<NavigationMenu.Link>
 				{#snippet child()}
-					<a href="{base}/relatorios/" class={navigationMenuTriggerStyle()}>Relatórios</a>
+					<div class="relative inline-flex">
+						<a href="{base}/relatorios/" class={navigationMenuTriggerStyle()}>Relatórios</a>
+						<span
+							class="bg-primary pointer-events-none absolute top-1 right-2 size-2 rounded-full"
+							aria-hidden="true"
+						></span>
+					</div>
 				{/snippet}
 			</NavigationMenu.Link>
 		</NavigationMenu.Item>
