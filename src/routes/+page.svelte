@@ -35,6 +35,13 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Renováveis Participa</title>
+	<meta name="title" content="Renováveis Participa" />
+	<meta property="og:title" content="Renováveis Participa" />
+	<meta name="twitter:title" content="Renováveis Participa" />
+</svelte:head>
+
 <section
 	class="from-background/60 to-primary/10 relative overflow-hidden bg-gradient-to-br py-20 md:py-32"
 >

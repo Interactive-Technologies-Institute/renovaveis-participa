@@ -6,6 +6,8 @@
 <svelte:head>
 	<title>{title} | Renováveis Participa</title>
 	<meta name="title" content="{title} | Renováveis Participa" />
+	<meta property="og:title" content="Renováveis Participa" />
+	<meta name="twitter:title" content="Renováveis Participa" />
 </svelte:head>
 
 <div class="relative w-full overflow-hidden">
