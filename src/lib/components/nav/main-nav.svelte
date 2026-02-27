@@ -27,8 +27,8 @@
 			<NavigationMenu.Link>
 				{#snippet child()}
 					<Tooltip.Provider>
-						<Tooltip.Root open={true}>
-							<Tooltip.Trigger>
+						<Tooltip.Root open={true} triggerId="relatorios-tooltip-trigger">
+							<Tooltip.Trigger id="relatorios-tooltip-trigger">
 								{#snippet child({ props })}
 									<a href="{base}/relatorios/" class={navigationMenuTriggerStyle()} {...props}>
 										Relatórios

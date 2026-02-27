@@ -63,8 +63,8 @@
 		<div class="flex flex-col gap-5 overflow-auto px-6 py-6">
 			{@render NavItem({ href: '/perguntas-frequentes/', content: 'Perguntas Frequentes' })}
 			<Tooltip.Provider>
-				<Tooltip.Root open={true} delayDuration={60}>
-					<Tooltip.Trigger>
+				<Tooltip.Root open={true} triggerId="mobile-relatorios-tooltip-trigger" delayDuration={60}>
+					<Tooltip.Trigger id="mobile-relatorios-tooltip-trigger">
 						{#snippet child({ props })}
 							{@render NavItem({
 								href: '/relatorios/',
