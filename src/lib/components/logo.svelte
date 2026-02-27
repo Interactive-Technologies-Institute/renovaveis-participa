@@ -1,22 +1,21 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import type { SVGAttributes } from 'svelte/elements';
+	import type { HTMLAnchorAttributes } from 'svelte/elements';
 
 	let {
 		class: className,
 		...restProps
 	}: {
 		class?: string;
-	} & SVGAttributes<SVGSVGElement> = $props();
+	} & HTMLAnchorAttributes = $props();
 </script>
 
-<a href="{base}/" aria-label="Renováveis Participa">
+<a href="{base}/" aria-label="Renováveis Participa" class={className} {...restProps}>
 	<svg
 		id="Layer_2"
 		xmlns="http://www.w3.org/2000/svg"
 		viewBox="0 0 786.53 297.95"
-		class={className}
-		{...restProps}
+		class="fill-primary h-full"
 		><g id="Layer_1-2"
 			><path
 				d="M244.74,80.88c3.3-7.48,9.49-11.22,18.58-11.22v14.12c-4.99-.32-9.33.87-13.03,3.56-3.7,2.7-5.55,7.14-5.55,13.33v17.38c0,7.2-5.83,13.03-13.03,13.03h0v-60.33h13.03v10.14Z"
