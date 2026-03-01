@@ -43,7 +43,7 @@
 </svelte:head>
 
 <section
-	class="from-background/60 to-primary/10 relative overflow-hidden bg-gradient-to-br py-20 md:py-32"
+	class="from-primary/10 to-secondary/10 relative overflow-hidden bg-linear-to-br py-20 md:py-32"
 >
 	<div class="relative z-10 container">
 		<div class="mx-auto max-w-4xl text-center">
@@ -85,7 +85,7 @@
 		</div>
 		<div class="mx-auto grid max-w-5xl gap-8 sm:grid-cols-2 lg:gap-12">
 			<div class="flex flex-col items-center text-center">
-				<AceleracaoDeProjetosRenovaveisIcon class="text-primary mb-6 h-20 w-20" />
+				<AceleracaoDeProjetosRenovaveisIcon class="text-secondary mb-6 h-20 w-20" />
 				<h3 class="font-title mb-3 text-xl font-semibold">Aceleração de projetos renováveis</h3>
 				<p class="text-muted-foreground">Simplificação e previsibilidade de procedimentos</p>
 			</div>
@@ -100,7 +100,7 @@
 				<p class="text-muted-foreground">Envolvimento dos diferentes atores ao longo do processo</p>
 			</div>
 			<div class="flex flex-col items-center text-center">
-				<MonitorizacaoContinuaIcon class="text-primary mb-6 h-20 w-20" />
+				<MonitorizacaoContinuaIcon class="text-secondary mb-6 h-20 w-20" />
 				<h3 class="font-title mb-3 text-xl font-semibold">Monitorização contínua</h3>
 				<p class="text-muted-foreground">Acompanhamento e avaliação ao longo do tempo</p>
 			</div>
@@ -142,7 +142,7 @@
 			>
 				<div class="flip-card-inner">
 					<div class="flip-card-front">
-						<PromotoresIcon class="text-primary mb-6 h-16 w-16" />
+						<PromotoresIcon class="text-secondary mb-6 h-16 w-16" />
 						<h3 class="font-title text-xl font-semibold">Promotores</h3>
 					</div>
 					<div class="flip-card-back">
@@ -176,7 +176,7 @@
 			>
 				<div class="flip-card-inner">
 					<div class="flip-card-front">
-						<CidadaoIcon class="text-primary mb-6 h-16 w-16" />
+						<CidadaoIcon class="text-secondary mb-6 h-16 w-16" />
 						<h3 class="font-title text-xl font-semibold">Cidadãos</h3>
 					</div>
 					<div class="flip-card-back">
