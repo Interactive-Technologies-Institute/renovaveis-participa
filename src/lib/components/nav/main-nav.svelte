@@ -35,7 +35,7 @@
 									</a>
 								{/snippet}
 							</Tooltip.Trigger>
-							<Tooltip.Content side="bottom" sideOffset={0}>
+							<Tooltip.Content side="bottom" sideOffset={0} class="px-4 py-2 text-base">
 								Novo relatório disponível
 							</Tooltip.Content>
 						</Tooltip.Root>
