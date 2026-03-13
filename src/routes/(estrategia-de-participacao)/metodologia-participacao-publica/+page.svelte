@@ -212,7 +212,7 @@
 								<h4 class="text-foreground mb-1 font-semibold">Calendário</h4>
 								<p class="text-muted-foreground">
 									20 dias úteis após divulgação do RFCD<br />
-									30 dias úteis após divulgação do RA
+									20 dias úteis após divulgação do RA
 								</p>
 							</div>
 						</div>
@@ -248,10 +248,7 @@
 							</div>
 							<div>
 								<h4 class="text-foreground mb-1 font-semibold">Calendário</h4>
-								<p class="text-muted-foreground">
-									20 dias úteis após divulgação do RFCD<br />
-									30 dias úteis após divulgação do RA
-								</p>
+								<p class="text-muted-foreground">20 dias úteis após divulgação do RA</p>
 							</div>
 						</div>
 					</Accordion.Content>
@@ -259,11 +256,11 @@
 			</Accordion.Root>
 			<div class="text-muted-foreground mt-2 text-xs">
 				<p>
-					<sup>1</sup> Os princípios da <em>Chatham House</em> visam a excelência, independência e a
-					promoção de um debate construtivo, sendo uma ferramenta chave para garantir a liberdade de
-					expressão em discussões de alto nível. Esta regra de confidencialidade permite aos participantes
-					de uma reunião usar as informações que recebem, não se revelando a identidade ou afiliação
-					de quem as proferiu.
+					<sup>1</sup> Os princípios da <em>Chatham House</em> visam a excelência, independência e a promoção
+					de um debate construtivo, sendo uma ferramenta chave para garantir a liberdade de expressão
+					em discussões de alto nível. Esta regra de confidencialidade permite aos participantes de uma
+					reunião usar as informações que recebem, não se revelando a identidade ou afiliação de quem
+					as proferiu.
 				</p>
 				<p><sup>2</sup> Previsto no nº 6 do artigo 7º do regime jurídico da AAE.</p>
 				<p><sup>3</sup> Previsto no nº 6 do artigo 7º do regime jurídico da AAE.</p>

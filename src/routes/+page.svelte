@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { base } from '$app/paths';
+	import { asset, base } from '$app/paths';
 	import AceleracaoDeProjetosRenovaveisIcon from '$lib/components/icons/aceleracao-de-projetos-renovaveis.svelte';
 	import CidadaoIcon from '$lib/components/icons/cidadao.svelte';
 	import CriteriosAmbientaisETerritoriaisIcon from '$lib/components/icons/criterios-ambientais-e-territoriais.svelte';
@@ -243,6 +243,19 @@
 					>
 				</Card.Root>
 			</div>
+		</div>
+	</div>
+</section>
+
+<section class="bg-muted/30 py-20 md:py-32">
+	<div class="container">
+		<div class="mx-auto max-w-5xl text-center">
+			<h2 class="font-title mb-8 text-3xl font-bold sm:text-4xl">Em que fase estamos?</h2>
+			<img
+				src={asset('/images/timeline.png')}
+				alt="Cronograma da fase atual do processo de participação pública"
+				class="w-full rounded-lg"
+			/>
 		</div>
 	</div>
 </section>
