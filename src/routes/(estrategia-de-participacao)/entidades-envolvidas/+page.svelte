@@ -21,6 +21,7 @@
 			<li>Associação Portuguesa de Energias Renováveis (APREN) e demais empresas do setor</li>
 			<li>Agência Portuguesa do Ambiente (APA)</li>
 			<li>Associação Portuguesa dos Arquitectos Paisagistas (APAP)</li>
+			<li>Biond</li>
 			<li>
 				Coligação C7:
 				<ul>
