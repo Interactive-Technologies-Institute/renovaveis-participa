@@ -8,30 +8,18 @@
 	import MunicipiosIcon from '$lib/components/icons/municipios.svelte';
 	import ParticipacaoPublicaIcon from '$lib/components/icons/participacao-publica.svelte';
 	import PromotoresIcon from '$lib/components/icons/promotores.svelte';
-	import { renewableAreas, type RenewableArea } from '$lib/data';
-	import MapSidePanel from '@/components/map/map-side-panel.svelte';
-	import Map from '@/components/map/map.svelte';
 	import { Button } from '@/components/ui/button';
 	import * as Card from '@/components/ui/card';
+	import { SvelteSet } from 'svelte/reactivity';
 
-	let selectedArea: RenewableArea | null = $state(null);
-	let flippedCards = $state<Set<string>>(new Set());
-
-	function handleAreaSelect(areaId: string) {
-		const area = renewableAreas.find((a) => a.id === areaId);
-		if (area) {
-			selectedArea = area;
-		}
-	}
+	const flippedCards = new SvelteSet<string>();
 
 	function toggleCard(cardId: string) {
-		const newFlipped = new Set(flippedCards);
-		if (newFlipped.has(cardId)) {
-			newFlipped.delete(cardId);
+		if (flippedCards.has(cardId)) {
+			flippedCards.delete(cardId);
 		} else {
-			newFlipped.add(cardId);
+			flippedCards.add(cardId);
 		}
-		flippedCards = newFlipped;
 	}
 </script>
 
@@ -207,41 +195,22 @@
 				ambiental, a coesão territorial e a participação pública informada.
 			</p>
 		</div>
-		<div class="relative">
-			<div class="pointer-events-none grid gap-8 blur-sm lg:h-[40rem] lg:grid-cols-3 lg:gap-12">
-				<div class="lg:col-span-1">
-					<div class="bg-card overflow-hidden rounded-lg border lg:h-[40rem]">
-						<MapSidePanel bind:selectedArea />
-					</div>
-				</div>
-				<div class="order-first lg:order-last lg:col-span-2">
-					<div class="bg-card h-[40rem] overflow-hidden rounded-lg border">
-						<Map
-							zoom={6}
-							lat={39.3999}
-							lng={-8.2245}
-							selectedAreaId={selectedArea?.id}
-							onAreaSelect={handleAreaSelect}
-						/>
-					</div>
-				</div>
+		<div class="grid gap-8 lg:grid-cols-2 lg:gap-12">
+			<div>
+				<h3 class="font-title mb-4 text-center text-2xl font-bold">ZAER para Energia Solar PV</h3>
+				<img
+					src={asset('/images/zaer_solar.jpg')}
+					alt="Mapa das Zonas de Aceleração da Implantação de Energias Renováveis para energia solar PV"
+					class="w-full object-contain"
+				/>
 			</div>
-			<div class="absolute inset-0 flex items-center justify-center px-4">
-				<Card.Root class="max-w-2xl text-center backdrop-blur-sm">
-					<Card.Header>
-						<Card.Title class="font-title text-2xl font-bold"
-							>O que é que se vai passar aqui?</Card.Title
-						>
-					</Card.Header>
-					<Card.Content>
-						Um <strong>Espaço de Diálogo</strong> aberto a todos — cidadãos, autarquias, empresas, associações
-						e instituições — onde pode conhecer o projeto, explorar mapas, colocar questões e contribuir
-						com ideias e sugestões.
-					</Card.Content>
-					<Card.Footer class="text-primary flex justify-center text-lg font-semibold"
-						>Participe no processo! A sua opinião é essencial.</Card.Footer
-					>
-				</Card.Root>
+			<div>
+				<h3 class="font-title mb-4 text-center text-2xl font-bold">ZAER para Energia Eólica</h3>
+				<img
+					src={asset('/images/zaer_eolica.jpg')}
+					alt="Mapa das Zonas de Aceleração da Implantação de Energias Renováveis para energia eólica"
+					class="w-full object-contain"
+				/>
 			</div>
 		</div>
 	</div>
@@ -256,6 +225,52 @@
 				alt="Cronograma da fase atual do processo de participação pública"
 				class="w-full rounded-lg"
 			/>
+		</div>
+	</div>
+</section>
+
+<section class="py-20 md:py-32">
+	<div class="container">
+		<div class="mx-auto max-w-5xl">
+			<div class="mx-auto mb-12 max-w-3xl text-center">
+				<h2 class="font-title text-3xl font-bold sm:text-4xl">Notícias</h2>
+			</div>
+			<Card.Root>
+				<Card.Content
+					class="grid items-start gap-8 p-6 md:grid-cols-[1.2fr_0.8fr] md:p-8 lg:gap-10"
+				>
+					<div class="space-y-6">
+						<h3 class="font-title text-2xl font-bold sm:text-3xl">
+							Apresentação dos mapas das ZAER no Ministério do Ambiente e Energia
+						</h3>
+						<div class="space-y-4">
+							<p class="text-muted-foreground text-lg leading-relaxed">
+								A apresentação dos mapas das Zonas de Aceleração de Energias Renováveis decorreu no
+								passado dia 04 de maio no Ministério do Ambiente e Energia, reunindo entidades do
+								setor e sociedade civil.
+							</p>
+							<p class="text-muted-foreground text-lg leading-relaxed">
+								A sessão permitiu apresentar o estado de desenvolvimento das ZAER, clarificar os
+								critérios territoriais e as salvaguardas ambientais, bem como enquadrar a divulgação
+								pública da Proposta de Programa Setorial e da respetiva Avaliação Ambiental
+								Estratégica.
+							</p>
+						</div>
+					</div>
+					<div class="grid gap-4">
+						<img
+							src={asset('/images/mrp.jpg')}
+							alt="Apresentação dos mapas das ZAER no Ministério do Ambiente e Energia"
+							class="aspect-video w-full rounded-lg object-cover"
+						/>
+						<img
+							src={asset('/images/equipa.jpg')}
+							alt="Equipa presente na apresentação dos mapas das ZAER"
+							class="aspect-video w-full rounded-lg object-cover"
+						/>
+					</div>
+				</Card.Content>
+			</Card.Root>
 		</div>
 	</div>
 </section>
