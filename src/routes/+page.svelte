@@ -221,7 +221,7 @@
 		<div class="mx-auto max-w-5xl text-center">
 			<h2 class="font-title mb-8 text-3xl font-bold sm:text-4xl">Em que fase estamos?</h2>
 			<img
-				src={asset('/images/timeline.png')}
+				src={asset('/images/timeline.jpg')}
 				alt="Cronograma da fase atual do processo de participação pública"
 				class="w-full rounded-lg"
 			/>
